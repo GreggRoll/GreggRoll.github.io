@@ -12,4 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         });
     });
-});
+})

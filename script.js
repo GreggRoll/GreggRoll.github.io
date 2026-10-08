@@ -2,7 +2,7 @@
 
 // Edit profile URLs here. A missing URL is shown honestly rather than guessed.
 const socialProfiles = {
-  linkedin: null,
+  linkedin: "https://www.linkedin.com/in/gregory-adams/",
   github: "https://github.com/GreggRoll",
   x: "https://x.com/aGreggRoll",
 };

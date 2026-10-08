@@ -18,7 +18,7 @@ Open http://127.0.0.1:4173. App content, screenshot paths, and social profiles a
 - MyJourney and VO2Cue images are their existing public showcase assets.
 - Grave Maintenance images show its browser prototype.
 - Time Boxed images show its interactive **web preview**, clearly labeled on the homepage. Replace with native app screenshots when available.
-- LinkedIn requires a confirmed profile URL. The site shows an honest pending label until one is supplied. X defaults to the account linked on GreggRoll’s public GitHub profile.
+- LinkedIn links to the confirmed Gregory Adams profile, with sharing parameters removed. X links to the account listed on GreggRoll’s public GitHub profile.
 
 ## Interaction
 

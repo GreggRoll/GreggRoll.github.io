@@ -1,166 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gregory Adams - Data Scientist</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Gregory Adams</h1>
-        <h2>Data Scientist</h2>
-        <p>11076 Freedom Way ⬥ Seminole, FL ⬥ (941) 759-0046 ⬥ Adamsg_53@yahoo.com</p>
-        <div class="links">
-            <a href="your-github-link" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
-            <a href="your-tableau-link" target="_blank"><img src="images/tableau-icon.png" alt="Tableau"></a>
-            <a href="your-linkedin-link" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-        </div>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151515" />
+    <meta
+      name="description"
+      content="Gregory Adams — U.S. Air Force veteran, data scientist by day, founder by night. Explore Time Boxed, MyJourney, VO2Cue, and Grave Maintenance."
+    />
+    <meta
+      property="og:title"
+      content="Gregory Adams · Data scientist. Founder. Builder."
+    />
+    <meta
+      property="og:description"
+      content="Data scientist by day. Founder by night. A collection of apps built with intention."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://greggroll.github.io/" />
+    <meta
+      property="og:image"
+      content="https://greggroll.github.io/assets/time-boxed-planner.jpg"
+    />
+    <link rel="canonical" href="https://greggroll.github.io/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Gregory Adams · Data Scientist & Founder</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#" aria-label="Gregory Adams home"
+        >greggroll<span class="brand-dot">.</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#work">The apps <span>04</span></a
+        ><a href="#about">The person</a
+        ><a class="nav-connect" href="#connect"
+          >Let’s connect <span aria-hidden="true">↗</span></a
+        >
+      </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#summary">Summary of Qualifications</a></li>
-            <li><a href="#systems-experience">Systems Experience Summary</a></li>
-            <li><a href="#contracting-experience">Contracting Experience</a></li>
-            <li><a href="#air-force-experience">U.S. Air Force Experience</a></li>
-            <li><a href="#professional-systems">Professional Systems Use</a></li>
-            <li><a href="#certifications">Certifications/Training</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="summary" class="collapsible">
-            <h3>Summary of Qualifications</h3>
-            <div class="content">
-                <ul>
-                    <li>5+ years of Military leadership experience</li>
-                    <li>Active Top Secret/SCI security clearance</li>
-                    <li>Honorably discharged from military service</li>
-                    <li>5+ years experience operating in an Agile team environment</li>
-                    <li>6+ years experience as a Python Data Scientist</li>
-                    <li>Machine learning model engineer with experience in PyTorch, JEMMA, PySpark, Tensor Flow, Keras, Sci-Kit learn</li>
-                    <li>Superior writing and communication skills</li>
-                    <li>Excellent interpersonal and customer service skills</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="systems-experience" class="collapsible">
-            <h3>Systems Experience Summary</h3>
-            <div class="content">
-                <ul>
-                    <li>7+ years experience in Python (ML, data exploration, app engineering)</li>
-                    <li>2+ years experience in Azure systems (Data Factory, Synapse, Azure SQL)</li>
-                    <li>4+ years experience creating/running ML models</li>
-                    <li>5+ years experience with SQL, Bash, Apache spark</li>
-                    <li>4+ years experience as a Tableau power user</li>
-                    <li>3+ years Apache Hadoop framework user experience</li>
-                    <li>8+ years experience as an Excel power user</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contracting-experience" class="collapsible">
-            <h3>Contracting Experience</h3>
-            <div class="content">
-                <h4>IronEagleX Data Scientist TS/SCI (Oct 2023 - present)</h4>
-                <ul>
-                    <li>Completed modernization efforts in support of SOCOM client.</li>
-                    <li>Created full-stack automation tool capable of saving 8000 man hours of manual geodatabase upgrading.</li>
-                    <li>Automated Conference preparation documents and visualizations, saving 80hrs/yr of division chief time and ensuring quality year-to-year.</li>
-                    <li>Created data health dashboard with automated alerts of data errors, enabled team to find and correct bad data.</li>
-                </ul>
-                <h4>KBR Data Scientist S/SCI (Mar 2021- Oct 2023)</h4>
-                <ul>
-                    <li>Tableau visualization/data expert, created hosted dashboards for Aircraft Maintenance community.</li>
-                    <li>PowerBI dashboard/data expert, hosted PowerBI dashboards using live data in a secure environment. Handled end to end including APIs, SQL server load and connections, complex visualizations, complex data transformations, security, and hosting.</li>
-                </ul>
-                <h4>Booz Allen Data Scientist TS/SCI (Jan 2019 – Feb 2021)</h4>
-                <ul>
-                    <li>Bridged the gap between engineers and senior management by taking in technical requirements and presenting data, conclusions, and intricate data facets to a wide range of personnel.</li>
-                    <li>Utilized elastic stack including Elasticsearch, Kibana, Knowi to create automated dashboards and visualizations.</li>
-                    <li>Utilized Python geolocational packages, QGIS, and ArcGIS to handle geographical data.</li>
-                    <li>Used Python in conjunction with SQL and the Apache Hadoop ecosystem to pull and massage large stores of data.</li>
-                    <li>Used Python machine learning techniques and Tableau to analyze model performance and create complex visualizations for technical and high level consumption.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="air-force-experience" class="collapsible">
-            <h3>U.S. Air Force Experience</h3>
-            <div class="content">
-                <h4>Unit SharePoint Owner (Mar 2017 - Dec 2018)</h4>
-                <ul>
-                    <li>Received Microsoft training for the installation and configuration of Windows applications.</li>
-                    <li>Leveraged Python to automate data gathering through the SharePoint API.</li>
-                    <li>Oversaw account and service management for over 200 members, utilizing tools like MS Excel, MS Word, and SharePoint.</li>
-                    <li>Maintained expertise in HTML, PowerPoint, MS Outlook, and Photoshop.</li>
-                </ul>
-                <h4>Unit Safety Coordinator (Apr 2016 - Dec 2018)</h4>
-                <ul>
-                    <li>Harnessed Python for data exploitation, generating intricate visualizations for high-level briefings.</li>
-                    <li>Championed safety and excellence; developed programs and strategies promoting a culture of workplace safety.</li>
-                    <li>Led risk management, ensuring adherence to protocols and spearheaded briefings for up to 100 personnel.</li>
-                    <li>Maintained and organized systematic records and files for safety protocols and measures.</li>
-                </ul>
-                <h4>In-Flight Refueling Specialist (Jan 2014 - Dec 2018)</h4>
-                <ul>
-                    <li>Participated in critical global operations, including multiple OREs, NORIs, and three Middle East tours.</li>
-                    <li>Operated with precision according to detailed regulatory guidelines, often adapting to novel procedures in real-time.</li>
-                    <li>Led teams, assessed performance, and contributed to humanitarian efforts during tours.</li>
-                    <li>Became a qualified operator of the ROBE system, showcasing adaptability to high-tech environments.</li>
-                </ul>
-                <h4>Key Achievements:</h4>
-                <ul>
-                    <li>Cultivated a robust culture of safety across teams, with an emphasis on proactive risk management.</li>
-                    <li>Employed data science techniques, such as Python scripting, to drive decision-making and visual reporting.</li>
-                    <li>Played a pivotal role in numerous international operations, reinforcing teamwork, adaptability, and operational excellence.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="professional-systems" class="collapsible">
-            <h3>Professional Systems Use</h3>
-            <div class="content">
-                <h4>Azure</h4>
-                <ul>
-                    <li>Created Data Factory pipelines taking legacy JSON and CSV into SQL.</li>
-                    <li>Created Data Flows transforming, joining, and verifying data in stream.</li>
-                    <li>Automated data ingest using triggers and dynamic DataBricks notebooks.</li>
-                </ul>
-                <h4>Python</h4>
-                <ul>
-                    <li>Utilized Python’s many libraries to clean and parse large sets of data. Created workflow script to automatically parse and process 300GB of new satellite data each week. Script used Python Machine learning to cluster satellite shots into groups based on predictive shot quality.</li>
-                    <li>Combined raster and time series data using Python to create a time-series map of under-performing targets. Map satisfied client demand and was presented at EUCOM conference.</li>
-                    <li>Created Automated map plotter packaged script to answer NGA team demand for an easy way to map vector data and get exploratory analytics on the fly and without need for coding experience.</li>
-                </ul>
-                <h4>Data Analytics</h4>
-                <ul>
-                    <li>Created many Tableau/Python/Kibana/Knowi dashboards including complex visualizations and real-time calculations to give clients easy access to real time analytics.</li>
-                    <li>Created dashboard based on Machine Learning Satellite tip script. Created algorithm to rate and measure ML system performance then display it for executive level comprehension.</li>
-                </ul>
-                <h4>SQL</h4>
-                <ul>
-                    <li>Used SQL to access NGA’s massive data warehouses. Used complex joins, sub-queries, and nested clauses to perform accurate searches of data. Utilizing basic SQL pulls could take 6+ hours, using complex SQL techniques I was able to narrow down the same pull to 1 hour and eliminate most post processing work.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="certifications" class="collapsible">
-            <h3>Certifications/Training</h3>
-            <div class="content">
-                <ul>
-                    <li>NGA certified in Geospatial Intelligence (GEOINT) Requirements Management</li>
-                    <li>LaunchCode certified in Python Data Analytics</li>
-                    <li>Completed Air Force Nuclear support and readiness program</li>
-                    <li>Pursuing SPC Bachelor’s Degree in Applied Mathematics</li>
-                    <li>DataCamp/CodeAcademy certifications in HTML, Python, and Java</li>
-                    <li>DataCamp certifications in Unsupervised/Supervised Machine Learning systems</li>
-                    <li>Tableau Desktop Specialist certification</li>
-                </ul>
-            </div>
-        </section>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> GREGORY ADAMS ·
+            ALWAYS BUILDING
+          </p>
+          <h1 id="hero-title">
+            Data scientist<br /><span class="day">by day.</span
+            ><br />Founder<br /><span class="night">by night.</span>
+          </h1>
+          <p class="hero-intro">
+            Veteran. Problem solver. Maker of things.<br />I turn curiosity into
+            apps that make everyday life a little better.
+          </p>
+          <a class="button primary" href="#work"
+            >Explore what I’m building <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-art" aria-label="A preview of my apps">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="art-coordinate" aria-hidden="true">
+            IDEA → BUILD → SHIP → REPEAT
+          </div>
+          <a
+            class="hero-phone phone-back"
+            href="#myjourney"
+            aria-label="Explore MyJourney"
+            ><img
+              src="assets/myjourney-compare.png"
+              width="397"
+              height="860"
+              alt="MyJourney’s progress photo comparison preview"
+          /></a>
+          <a
+            class="hero-phone phone-front"
+            href="#vo2cue"
+            aria-label="Explore VO2Cue"
+            ><img
+              src="assets/vo2cue-timer.jpg"
+              width="360"
+              height="780"
+              alt="VO2Cue live interval timer showing a sprint"
+          /></a>
+          <a
+            class="floating-icon icon-time"
+            href="#time-boxed"
+            aria-label="Explore Time Boxed"
+            ><img
+              src="assets/time-boxed-icon.png"
+              width="80"
+              height="80"
+              alt=""
+          /></a>
+          <a class="floating-game" href="#grave-maintenance"
+            ><span class="game-mark" aria-hidden="true">GM</span
+            ><span
+              >Grave Maintenance<small
+                >A different kind of night shift.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          >
+          <div class="veteran-label">
+            <svg
+              width="20"
+              height="24"
+              viewBox="0 0 20 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M10 1 18 4v8c0 5-8 10-8 10S2 17 2 12V4l8-3Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="m10 6 1.4 3 3.3.4-2.4 2.2.6 3.2-2.9-1.5-2.9 1.5.6-3.2-2.4-2.2L8.6 9 10 6Z"
+                fill="currentColor"
+              />
+            </svg>
+            U.S. AIR FORCE VETERAN
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>BUILT WITH PURPOSE. MADE TO BE USED.</span
+          ><a href="#work"
+            >SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section id="work" class="work wrap" aria-labelledby="work-title">
+        <div class="section-intro reveal">
+          <p class="eyebrow">01 / THE APPS</p>
+          <h2 id="work-title">Small ideas.<br /><span>Real things.</span></h2>
+          <p>
+            A little more focus. A clearer picture of progress. A better
+            workout. And a night shift you won’t forget.
+          </p>
+        </div>
+        <nav class="app-nav" aria-label="Jump to an app">
+          <a href="#time-boxed" aria-current="location"
+            ><span>01</span> Time Boxed</a
+          ><a href="#myjourney"><span>02</span> MyJourney</a
+          ><a href="#vo2cue"><span>03</span> VO2Cue</a
+          ><a href="#grave-maintenance"><span>04</span> Grave Maintenance</a>
+        </nav>
+        <div id="app-showcases"></div>
+      </section>
+      <section id="about" class="about wrap" aria-labelledby="about-title">
+        <div class="about-title reveal">
+          <p class="eyebrow">02 / THE PERSON</p>
+          <h2 id="about-title">
+            A service mindset.<br /><span>A builder’s instinct.</span>
+          </h2>
+          <div class="about-signature">Gregory Adams <span>↗</span></div>
+        </div>
+        <div class="about-story reveal">
+          <p class="about-lead">
+            I’m a U.S. Air Force veteran, a data scientist, and a founder who
+            likes turning a “what if” into something you can actually use.
+          </p>
+          <p>
+            My time in the Air Force shaped how I work: stay curious, take
+            responsibility, and keep moving when the problem gets complicated.
+            Those habits followed me into data science and into the apps I
+            build.
+          </p>
+          <p>
+            By day, I work with data, machine learning, and automation. By
+            night, I trade datasets for prototypes and build tools around the
+            things I care about: focus, progress, fitness, and the occasional
+            strange idea.
+          </p>
+          <div class="about-tags">
+            <span>U.S. Air Force veteran</span><span>Data scientist</span
+            ><span>Independent founder</span>
+          </div>
+        </div>
+      </section>
+      <section
+        id="connect"
+        class="connect wrap"
+        aria-labelledby="connect-title"
+      >
+        <div class="reveal">
+          <p class="eyebrow">03 / WHAT’S NEXT?</p>
+          <h2 id="connect-title">
+            Good things start<br />with a <span>conversation.</span>
+          </h2>
+          <p>
+            Have an idea, a question, or something you’re building?<br />Let’s
+            compare notes.
+          </p>
+        </div>
+        <div class="social-links" id="social-links"></div>
+      </section>
     </main>
-    <script src="scripts.js"></script>
-</body>
+    <footer class="wrap">
+      <a class="wordmark" href="#">greggroll<span class="brand-dot">.</span></a
+      ><span>© <span id="year">2026</span> Gregory Adams</span
+      ><a href="#main">Back to the top <span aria-hidden="true">↑</span></a>
+    </footer>
+    <dialog id="screenshot-dialog" aria-label="Expanded app screenshot">
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Close expanded screenshot"
+      >
+        ✕</button
+      ><img alt="" />
+      <p></p>
+    </dialog>
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      </style>
+      <p class="wrap">
+        Explore my apps:
+        <a href="https://greggroll.github.io/time-boxed/demo/">Time Boxed</a>,
+        <a href="https://greggroll.github.io/MyJourney/">MyJourney</a>,
+        <a href="https://greggroll.github.io/vo2cue/demo/">VO2Cue</a>, and
+        <a href="https://greggroll.github.io/grave-maintenance/"
+          >Grave Maintenance</a
+        >. Connect on <a href="https://github.com/GreggRoll">GitHub</a>.
+      </p></noscript
+    >
+  </body>
 </html>

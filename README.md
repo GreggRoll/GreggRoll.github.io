@@ -23,4 +23,8 @@ Open http://127.0.0.1:4173. App content, screenshot paths, and social profiles a
 
 ## Interaction
 
-Each gallery supports swipe, keyboard arrows, previous/next controls, direct slide selection, and expanded screenshots. Galleries never autoplay. Scroll reveals honor reduced motion. The app navigator remains visible while browsing the showcases. External links open separately with `noopener noreferrer`.
+Each gallery supports swipe, keyboard arrows, previous/next controls, direct slide selection, and expanded screenshots. Galleries never autoplay. Only gallery navigation animates, and it honors reduced motion. Page content and navigation stay still while scrolling. The project index wraps naturally on small screens. External links open separately with `noopener noreferrer`.
+
+## Presentation
+
+The homepage uses plain first-person copy and keeps the established charcoal/orange palette. There are no section numbers, uppercase eyebrow labels, decorative dots, scroll progress bars, or entrance animations. Each app has a different composition: a wide planner with side notes, a photo journal with its gallery beside the copy, an interval timer with workout notes, a full-width game gallery, and a pet showcase. Shared gallery controls use descriptive text instead of dots.

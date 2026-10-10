@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#151515" />
+    <meta name="theme-color" content="#191919" />
     <meta
       name="description"
-      content="Gregory Adams — U.S. Air Force veteran, data scientist by day, founder by night. Explore Time Boxed, MyJourney, VO2Cue, Grave Maintenance, and MyFurBaby."
+      content="I'm Greg Adams, a U.S. Air Force veteran, data scientist, and founder. These are my apps: Time Boxed, MyJourney, VO2Cue, Grave Maintenance, and MyFurBaby."
     />
     <meta
       property="og:title"
-      content="Gregory Adams · Data scientist. Founder. Builder."
+      content="Gregory Adams — my apps and a bit about me"
     />
     <meta
       property="og:description"
-      content="Data scientist by day. Founder by night. A collection of apps built with intention."
+      content="Data scientist by day. Founder by night. Take a look at what I'm working on."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://greggroll.github.io/" />
@@ -26,163 +26,67 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Gregory Adams · Data Scientist & Founder</title>
+    <title>Gregory Adams — Data Scientist & Founder</title>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-header wrap">
-      <a class="wordmark" href="#" aria-label="Gregory Adams home"
-        >greggroll<span class="brand-dot">.</span></a
-      >
+      <a class="wordmark" href="#main">Gregory Adams</a>
       <nav aria-label="Main navigation">
-        <a href="#work">The apps <span>05</span></a
-        ><a href="#about">The person</a
-        ><a class="nav-connect" href="#connect"
-          >Let’s connect <span aria-hidden="true">↗</span></a
-        >
+        <a href="#work">Apps</a>
+        <a href="#about">About me</a>
+        <a href="#connect">Find me online</a>
       </nav>
     </header>
     <main id="main">
       <section class="hero wrap" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> GREGORY ADAMS ·
-            ALWAYS BUILDING
+        <p class="hello">Hi, I’m Greg.</p>
+        <h1 id="hero-title">Data scientist by day.<br />Founder by night.</h1>
+        <div class="hero-intro">
+          <p>
+            I’m a U.S. Air Force veteran. These days, I work in data science and
+            build apps in my spare time.
           </p>
-          <h1 id="hero-title">
-            Data scientist<br /><span class="day">by day.</span
-            ><br />Founder<br /><span class="night">by night.</span>
-          </h1>
-          <p class="hero-intro">
-            Veteran. Problem solver. Maker of things.<br />I turn curiosity into
-            apps that make everyday life a little better.
+          <p>
+            Some are practical tools for planning and fitness. There’s also a
+            cemetery game and a pet that lives on your Home Screen.
           </p>
-          <a class="button primary" href="#work"
-            >Explore what I’m building <span aria-hidden="true">↓</span></a
-          >
         </div>
-        <div class="hero-art" aria-label="A preview of my apps">
-          <div class="orbit orbit-one" aria-hidden="true"></div>
-          <div class="orbit orbit-two" aria-hidden="true"></div>
-          <div class="art-coordinate" aria-hidden="true">
-            IDEA → BUILD → SHIP → REPEAT
-          </div>
-          <a
-            class="hero-phone phone-back"
-            href="#myjourney"
-            aria-label="Explore MyJourney"
-            ><img
-              src="assets/myjourney-compare.png"
-              width="397"
-              height="860"
-              alt="MyJourney’s progress photo comparison preview"
-          /></a>
-          <a
-            class="hero-phone phone-front"
-            href="#vo2cue"
-            aria-label="Explore VO2Cue"
-            ><img
-              src="assets/vo2cue-timer.jpg"
-              width="360"
-              height="780"
-              alt="VO2Cue live interval timer showing a sprint"
-          /></a>
-          <a
-            class="floating-icon icon-time"
-            href="#time-boxed"
-            aria-label="Explore Time Boxed"
-            ><img
-              src="assets/time-boxed-icon.png"
-              width="80"
-              height="80"
-              alt=""
-          /></a>
-          <a class="floating-game" href="#grave-maintenance"
-            ><span class="game-mark" aria-hidden="true">GM</span
-            ><span
-              >Grave Maintenance<small
-                >A different kind of night shift.</small
-              ></span
-            ><span aria-hidden="true">↗</span></a
-          >
-          <div class="veteran-label">
-            <svg
-              width="20"
-              height="24"
-              viewBox="0 0 20 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M10 1 18 4v8c0 5-8 10-8 10S2 17 2 12V4l8-3Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-              />
-              <path
-                d="m10 6 1.4 3 3.3.4-2.4 2.2.6 3.2-2.9-1.5-2.9 1.5.6-3.2-2.4-2.2L8.6 9 10 6Z"
-                fill="currentColor"
-              />
-            </svg>
-            U.S. AIR FORCE VETERAN
-          </div>
-        </div>
-        <div class="hero-bottom">
-          <span>BUILT WITH PURPOSE. MADE TO BE USED.</span
-          ><a href="#work"
-            >SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a
-          >
-        </div>
+        <a class="text-link" href="#work">Take a look at the apps ↓</a>
       </section>
       <section id="work" class="work wrap" aria-labelledby="work-title">
-        <div class="section-intro reveal">
-          <p class="eyebrow">01 / THE APPS</p>
-          <h2 id="work-title">Small ideas.<br /><span>Real things.</span></h2>
+        <div class="work-intro">
+          <h2 id="work-title">My apps</h2>
           <p>
-            A little more focus. A clearer picture of progress. A better
-            workout. A night shift you won’t forget. And a little friend on your
-            Home Screen.
+            Try the web demos, browse the screenshots, or have a look at the
+            code.
           </p>
         </div>
         <nav class="app-nav" aria-label="Jump to an app">
-          <a href="#time-boxed" aria-current="location"
-            ><span>01</span> Time Boxed</a
-          ><a href="#myjourney"><span>02</span> MyJourney</a
-          ><a href="#vo2cue"><span>03</span> VO2Cue</a
-          ><a href="#grave-maintenance"><span>04</span> Grave Maintenance</a>
-          <a href="#myfurbaby"><span>05</span> MyFurBaby</a>
+          <a href="#time-boxed">Time Boxed</a>
+          <a href="#myjourney">MyJourney</a>
+          <a href="#vo2cue">VO2Cue</a>
+          <a href="#grave-maintenance">Grave Maintenance</a>
+          <a href="#myfurbaby">MyFurBaby</a>
         </nav>
         <div id="app-showcases"></div>
       </section>
       <section id="about" class="about wrap" aria-labelledby="about-title">
-        <div class="about-title reveal">
-          <p class="eyebrow">02 / THE PERSON</p>
-          <h2 id="about-title">
-            A service mindset.<br /><span>A builder’s instinct.</span>
-          </h2>
-          <div class="about-signature">Gregory Adams <span>↗</span></div>
-        </div>
-        <div class="about-story reveal">
-          <p class="about-lead">
-            I’m a U.S. Air Force veteran, a data scientist, and a founder who
-            likes turning a “what if” into something you can actually use.
+        <h2 id="about-title">A bit about me</h2>
+        <div class="about-story">
+          <p>
+            I’m Greg Adams, a U.S. Air Force veteran, data scientist, and
+            independent founder. You’ll also find me online as greggroll.
           </p>
           <p>
-            My time in the Air Force shaped how I work: stay curious, take
-            responsibility, and keep moving when the problem gets complicated.
-            Those habits followed me into data science and into the apps I
-            build.
+            My day job involves data, machine learning, and automation. Outside
+            of work, I build the apps you see here. They cover planning,
+            progress photos, interval training, games, and virtual pets.
           </p>
           <p>
-            By day, I work with data, machine learning, and automation. By
-            night, I trade datasets for prototypes and build tools around the
-            things I care about: focus, progress, fitness, and the occasional
-            strange idea.
+            This page is where I keep them all together. You can try a demo or
+            read the source code for any of them.
           </p>
-          <div class="about-tags">
-            <span>U.S. Air Force veteran</span><span>Data scientist</span
-            ><span>Independent founder</span>
-          </div>
         </div>
       </section>
       <section
@@ -190,23 +94,18 @@
         class="connect wrap"
         aria-labelledby="connect-title"
       >
-        <div class="reveal">
-          <p class="eyebrow">03 / WHAT’S NEXT?</p>
-          <h2 id="connect-title">
-            Good things start<br />with a <span>conversation.</span>
-          </h2>
+        <div>
+          <h2 id="connect-title">Find me online</h2>
           <p>
-            Have an idea, a question, or something you’re building?<br />Let’s
-            compare notes.
+            If you try an app, I’d like to hear what worked and what didn’t.
           </p>
         </div>
         <div class="social-links" id="social-links"></div>
       </section>
     </main>
     <footer class="wrap">
-      <a class="wordmark" href="#">greggroll<span class="brand-dot">.</span></a
-      ><span>© <span id="year">2026</span> Gregory Adams</span
-      ><a href="#main">Back to the top <span aria-hidden="true">↑</span></a>
+      <span>© <span id="year">2026</span> Gregory Adams</span>
+      <a href="#main">Back to top ↑</a>
     </footer>
     <dialog id="screenshot-dialog" aria-label="Expanded app screenshot">
       <button
@@ -214,17 +113,12 @@
         type="button"
         aria-label="Close expanded screenshot"
       >
-        ✕</button
-      ><img alt="" />
+        Close
+      </button>
+      <img alt="" />
       <p></p>
     </dialog>
-    <noscript
-      ><style>
-        .reveal {
-          opacity: 1;
-          transform: none;
-        }
-      </style>
+    <noscript>
       <p class="wrap">
         Explore my apps:
         <a href="https://greggroll.github.io/time-boxed/demo/">Time Boxed</a>,
@@ -233,8 +127,11 @@
         <a href="https://greggroll.github.io/grave-maintenance/"
           >Grave Maintenance</a
         >, and <a href="https://greggroll.github.io/MyFurBaby/">MyFurBaby</a>.
-        Connect on <a href="https://github.com/GreggRoll">GitHub</a>.
-      </p></noscript
-    >
+        Find me on
+        <a href="https://www.linkedin.com/in/gregory-adams/">LinkedIn</a>,
+        <a href="https://github.com/GreggRoll">GitHub</a>, or
+        <a href="https://x.com/aGreggRoll">X</a>.
+      </p>
+    </noscript>
   </body>
 </html>

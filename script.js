@@ -1,6 +1,5 @@
 "use strict";
 
-// Edit profile URLs here. A missing URL is shown honestly rather than guessed.
 const socialProfiles = {
   linkedin: "https://www.linkedin.com/in/gregory-adams/",
   github: "https://github.com/GreggRoll",
@@ -11,213 +10,260 @@ const apps = [
   {
     id: "time-boxed",
     name: "Time Boxed",
-    category: "Focus & daily planning",
     icon: "time-boxed-icon.png",
-    accent: "#bdd4b0",
-    tint: "#252e23",
-    tagline: "Give your priorities a place in your day.",
     description:
-      "A calm daily planner for iPhone and iPad. Bring your priorities, loose thoughts, and time boxes into one workspace, then make room for what matters.",
-    features: [
-      "Choose your priorities. Clear your head with a Brain Dump.",
-      "Plan in 30- or 60-minute blocks. Merge time for deep work.",
-      "Local saving, offline planning, and no account required.",
-    ],
+      "A daily planner for iPhone and iPad. Set your priorities, get loose thoughts out of your head, and put tasks on a timeline.",
+    details:
+      "Plan in 30- or 60-minute blocks, or merge blocks when you need more time. Your plan saves locally and works offline. You don’t need an account.",
     demo: "https://greggroll.github.io/time-boxed/demo/",
-    cta: "Try the planner",
+    cta: "Try the web planner",
     source: "https://github.com/GreggRoll/time-boxed",
     store:
       "https://apps.apple.com/us/app/time-boxed-focus-your-day/id6762071236",
-    galleryLabel: "INSIDE THE WEB PREVIEW",
     shots: [
       [
         "time-boxed-workspace.svg",
-        "Your daily workspace, all in one place.",
+        "Priorities, notes, and your schedule in the web planner.",
         "wide",
+        "Planner",
       ],
       [
         "time-boxed-thoughts.svg",
-        "Priorities and a little room to think.",
+        "The priorities and Brain Dump panels.",
         "wide",
+        "Notes",
       ],
       [
         "time-boxed-schedule.svg",
-        "Give the important things time on your timeline.",
+        "Time blocks on the daily timeline.",
         "wide",
+        "Schedule",
       ],
     ],
   },
   {
     id: "myjourney",
     name: "MyJourney",
-    category: "Progress & personal growth",
     icon: "myjourney-icon.png",
-    accent: "#c2b4e5",
-    tint: "#2b2536",
-    tagline: "Small changes. A bigger picture.",
     description:
-      "Progress is easy to miss when you see it every day. Build a photo journal, line up consistent shots, and look back at how far you’ve come. Your photos stay on your device.",
-    features: [
-      "Frame your next photo with a ghost overlay, grid, and timer.",
-      "Slide between before and after. Revisit your photo timeline.",
-      "Turn a journey into a GIF or video when you’re ready to share.",
-    ],
+      "A progress photo journal. Take consistent photos, compare them side by side, and keep a timeline you can look back through.",
+    details:
+      "A ghost overlay, grid, and timer help you line up the next shot. Export a GIF or video when you want to share. Your photos stay on your device.",
     demo: "https://greggroll.github.io/MyJourney/",
-    cta: "Explore MyJourney",
+    cta: "See MyJourney",
     source: "https://github.com/GreggRoll/MyJourney",
     store:
       "https://apps.apple.com/us/app/my-journey-progress-in-pics/id6762496363",
-    galleryLabel: "PROGRESS, IN PICTURES",
     shots: [
-      ["myjourney-compare.png", "Compare two moments. See every change."],
-      ["myjourney-timeline.png", "Build a habit, one photo at a time."],
-      ["myjourney-privacy.png", "Your journey stays yours."],
+      [
+        "myjourney-compare.png",
+        "The before-and-after photo comparison.",
+        "",
+        "Compare",
+      ],
+      [
+        "myjourney-timeline.png",
+        "The progress photo timeline.",
+        "",
+        "Timeline",
+      ],
+      [
+        "myjourney-privacy.png",
+        "MyJourney’s on-device photo storage.",
+        "",
+        "Privacy",
+      ],
     ],
   },
   {
     id: "vo2cue",
     name: "VO2Cue",
-    category: "Fitness & interval training",
     icon: "vo2cue-icon.png",
-    accent: "#ffab84",
-    tint: "#332820",
-    tagline: "Find your rhythm. Leave the clock to me.",
     description:
-      "An interval coach for iPhone and Apple Watch, built around Norwegian-style 4×4 training. Haptics, tones, and spoken cues guide your workout so you can keep your attention on the effort.",
-    features: [
-      "Run a 4×4 session or customize your own intervals.",
-      "Train with Watch haptics, audio, and optional voice cues.",
-      "Track sessions locally. Save workouts to Apple Health.",
-    ],
+      "An interval timer for iPhone and Apple Watch. It guides Norwegian-style 4×4 workouts with haptics, tones, and optional spoken cues.",
+    details:
+      "Use a 4×4 session or set your own intervals. Keep a local workout history and save sessions to Apple Health.",
     demo: "https://greggroll.github.io/vo2cue/demo/",
-    cta: "Explore VO2Cue",
+    cta: "Try the timer",
     source: "https://github.com/GreggRoll/vo2cue",
     store: "https://apps.apple.com/us/app/vo2cue/id6804899072",
-    galleryLabel: "LESS WATCHING. MORE MOVING.",
     shots: [
-      ["vo2cue-timer.jpg", "A clear live timer for every interval."],
-      ["vo2cue-workouts.jpg", "Your workouts, ready when you are."],
-      ["vo2cue-history.jpg", "See your sessions and keep the momentum."],
-      ["vo2cue-watch.jpg", "Your interval coach, right on your wrist."],
+      [
+        "vo2cue-timer.jpg",
+        "The live interval timer during a sprint.",
+        "",
+        "Timer",
+      ],
+      [
+        "vo2cue-workouts.jpg",
+        "Saved workouts and interval presets.",
+        "",
+        "Workouts",
+      ],
+      ["vo2cue-history.jpg", "Your completed workout sessions.", "", "History"],
+      ["vo2cue-watch.jpg", "The interval timer on Apple Watch.", "", "Watch"],
     ],
   },
   {
     id: "grave-maintenance",
     name: "Grave Maintenance",
-    category: "A game for the night shift",
-    accent: "#d9c28d",
-    tint: "#242b28",
-    tagline: "An honest day’s work. After dark.",
     description:
-      "A cemetery maintenance game with a five-minute shift and a few very unhappy residents. Mow, rake, take out the trash, and clean graves. Make a mistake, and you may wake something you wish you hadn’t.",
-    features: [
-      "Four jobs. Five minutes. Get back to the truck before 3 AM.",
-      "Choose your tools, earn your pay, and recover your equipment.",
-      "Play solo in your browser. Co-op supports up to four players.",
-    ],
+      "You have five minutes to finish a cemetery maintenance shift. Mow, rake, empty the trash, and clean the graves. Try not to wake the residents.",
+    details:
+      "Choose your tools, earn your pay, and get back to the truck before 3 AM. Play solo in the browser, or co-op with up to four players when the game server is online.",
     demo: "https://greggroll.github.io/grave-maintenance/",
-    cta: "Play a shift",
+    cta: "Play the game",
     source: "https://github.com/GreggRoll/grave-maintenance",
-    note: "Playable prototype · Co-op requires the game server to be online.",
-    galleryLabel: "WELCOME TO BRIAR HOLLOW",
+    note: "Browser prototype. Co-op needs the game server to be online.",
     shots: [
-      ["grave-game.jpg", "A quiet cemetery. For now.", "wide"],
-      ["grave-trailer.jpg", "Pack the trailer before you clock in.", "wide"],
-      ["grave-shop.jpg", "Better equipment. Bigger decisions.", "wide"],
+      [
+        "grave-game.jpg",
+        "A shift at Briar Hollow cemetery.",
+        "wide",
+        "Cemetery",
+      ],
+      [
+        "grave-trailer.jpg",
+        "The equipment trailer before a shift.",
+        "wide",
+        "Trailer",
+      ],
+      [
+        "grave-shop.jpg",
+        "The shop, where you can upgrade your equipment.",
+        "wide",
+        "Shop",
+      ],
     ],
   },
-
   {
     id: "myfurbaby",
     name: "MyFurBaby",
-    category: "Personal pets & Home Screen widgets",
     icon: "myfurbaby-icon.png",
-    accent: "#d0b8ef",
-    tint: "#302538",
-    tagline: "Your Home Screen. Their happy place.",
     description:
-      "Dream up your own little companion, give them a cozy home on your iPhone Home Screen, and take them on photo adventures. Choose their species, colors, accessories, and name to make your Fur Baby your own.",
-    features: [
-      "Small and wide widgets with a clock, daily quote, or pet info.",
-      "Playful and sleepy animations, with backgrounds that feel like you.",
-      "Bring your pet into your photos. Save and share the adventures.",
-    ],
+      "Make a virtual pet for your iPhone Home Screen. Pick its species, colors, accessories, and name, then give it a widget to live in.",
+    details:
+      "Add a clock, a daily quote, or pet info to the widget. You can also put your pet into a photo, save it, and share it.",
     demo: "https://greggroll.github.io/MyFurBaby/",
-    cta: "Meet MyFurBaby",
+    cta: "See MyFurBaby",
     source: "https://github.com/GreggRoll/MyFurBaby",
-    note: "Coming soon to the App Store · Widgets and adventures require Pro; AI creations use credits.",
-    galleryLabel: "A LITTLE FRIEND. A LITTLE MORE JOY.",
+    note: "Coming soon to the App Store. Widgets and photo adventures require Pro; AI creations use credits.",
     shots: [
-      ["myfurbaby-pet.jpg", "A sleepy companion, right on your Home Screen."],
+      [
+        "myfurbaby-pet.jpg",
+        "Sterling in a small Home Screen widget.",
+        "",
+        "Pet widget",
+      ],
       [
         "myfurbaby-clock.jpg",
-        "A clock with a colorful little sidekick.",
+        "A wide widget with a clock and a pet.",
         "wide",
+        "Clock",
       ],
       [
         "myfurbaby-quote.jpg",
-        "A daily quote. A cozy corner. Your Fur Baby.",
+        "A pet widget with a daily quote.",
         "wide",
+        "Quote",
       ],
       [
         "myfurbaby-adventures.jpg",
-        "Take your little friend on a photo adventure.",
+        "A pet photo adventure on the moon.",
+        "",
+        "Adventure",
       ],
     ],
   },
 ];
 
-const showcases = document.querySelector("#app-showcases");
-showcases.innerHTML = apps
+function heading(app) {
+  return `<div class="project-title">${app.icon ? `<img src="assets/${app.icon}" alt="" width="52" height="52" loading="lazy">` : ""}<h3 id="${app.id}-title">${app.name}</h3></div>`;
+}
+
+function links(app) {
+  return `<div class="app-actions"><a class="app-cta" href="${app.demo}" target="_blank" rel="noopener noreferrer">${app.cta} ↗</a>${app.store ? `<a href="${app.store}" target="_blank" rel="noopener noreferrer">App Store</a>` : ""}<a href="${app.source}" target="_blank" rel="noopener noreferrer">Source code</a></div>${app.note ? `<p class="release-note">${app.note}</p>` : ""}`;
+}
+
+function gallery(app) {
+  return `<div class="carousel" role="region" aria-roledescription="carousel" aria-label="${app.name} screenshots">
+    <div class="carousel-track" tabindex="0" aria-label="${app.name} gallery. Swipe or use the arrow keys to browse.">
+      ${app.shots.map(([src, caption, kind], index) => `<figure class="slide ${kind || ""}" role="group" aria-roledescription="slide" aria-label="${caption}" ${index === 0 ? "" : 'inert aria-hidden="true"'}><button class="screenshot-button" type="button" aria-label="Expand screenshot: ${caption}"><img src="assets/${src}" alt="${app.name}: ${caption}" loading="lazy" decoding="async"></button><figcaption>${caption}</figcaption></figure>`).join("")}
+    </div>
+    <div class="carousel-controls"><div class="slide-picker" aria-label="Choose a screenshot">${app.shots.map((shot, index) => `<button type="button" aria-label="Show ${app.name}: ${shot[3]}" ${index === 0 ? 'aria-current="true"' : ""}>${shot[3]}</button>`).join("")}</div><div class="control-group"><button class="previous" type="button" aria-label="Previous ${app.name} screenshot">←</button><button class="next" type="button" aria-label="Next ${app.name} screenshot">→</button></div></div>
+    <p class="sr-only gallery-status" aria-live="polite" aria-atomic="true">${app.shots[0][1]}</p>
+  </div>`;
+}
+
+// Each project has a composition suited to its content; galleries share controls.
+const layouts = {
+  "time-boxed": (app) =>
+    `${heading(app)}<p class="project-summary">${app.description}</p><div class="planner-body">${gallery(app)}<div class="planner-notes"><h4>Planning a day</h4><p>${app.details}</p>${links(app)}<p class="preview-note">These previews show the web planner. You can try it without installing the app.</p></div></div>`,
+  myjourney: (app) =>
+    `<div class="project-copy">${heading(app)}<p class="project-summary">${app.description}</p><p>${app.details}</p>${links(app)}</div>${gallery(app)}`,
+  vo2cue: (app) =>
+    `<div class="coach-copy">${heading(app)}<p class="project-summary">${app.description}</p><dl class="workout-notes"><div><dt>Intervals</dt><dd>4×4 sessions or your own timing.</dd></div><div><dt>Cues</dt><dd>Watch haptics, audio, and optional voice.</dd></div><div><dt>History</dt><dd>Local sessions and Apple Health.</dd></div></dl>${links(app)}</div>${gallery(app)}`,
+  "grave-maintenance": (app) =>
+    `<div class="game-intro"><div>${heading(app)}<p class="project-summary">${app.description}</p></div><div>${links(app)}</div></div>${gallery(app)}<p class="game-notes">${app.details}</p>`,
+  myfurbaby: (app) =>
+    `<div class="pet-intro">${heading(app)}<p class="project-summary">${app.description}</p></div><div class="pet-body"><div class="pet-notes"><p>${app.details}</p><p>The pet can play or sleep, with a background you choose.</p>${links(app)}</div>${gallery(app)}</div>`,
+};
+
+document.querySelector("#app-showcases").innerHTML = apps
   .map(
-    (app, index) => `
-  <article class="showcase reveal" id="${app.id}" style="--accent:${app.accent};--tint:${app.tint}" aria-labelledby="${app.id}-title">
-    <div class="app-copy">
-      <div class="app-identity">${app.icon ? `<img src="assets/${app.icon}" alt="" width="54" height="54" loading="lazy">` : '<span class="game-icon" aria-hidden="true">GM</span>'}<div><span class="app-number">0${index + 1} / BUILT BY GREG</span><span class="app-category">${app.category}</span></div></div>
-      <h3 id="${app.id}-title">${app.name}</h3><p class="app-tagline">${app.tagline}</p><p class="app-description">${app.description}</p>
-      <ul class="feature-list">${app.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>
-      <div class="app-actions"><a class="button" href="${app.demo}" target="_blank" rel="noopener noreferrer">${app.cta} <span aria-hidden="true">↗</span></a><a class="source-link" href="${app.source}" target="_blank" rel="noopener noreferrer">View the code ↗</a></div>
-      ${app.store ? `<a class="store-link" href="${app.store}" target="_blank" rel="noopener noreferrer">Find it on the App Store ↗</a>` : `<p class="carousel-hint">${app.note}</p>`}
-    </div>
-    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="${app.name} screenshots">
-      <span class="gallery-label">${app.galleryLabel}</span>
-      <div class="carousel-track" tabindex="0" aria-label="${app.name} screenshot gallery. Use left and right arrow keys or swipe.">
-        ${app.shots.map(([src, caption, kind], shotIndex) => `<figure class="slide ${kind || ""}" role="group" aria-roledescription="slide" aria-label="${shotIndex + 1} of ${app.shots.length}" ${shotIndex === 0 ? "" : 'inert aria-hidden="true"'}><button class="screenshot-button" type="button" aria-label="Expand screenshot: ${caption}"><img src="assets/${src}" alt="${app.name}: ${caption}" loading="lazy" decoding="async"></button><figcaption>${caption}</figcaption></figure>`).join("")}
-      </div>
-      <div class="carousel-controls"><span class="slide-count" aria-live="polite" aria-atomic="true">01 / 0${app.shots.length}</span><div class="dots">${app.shots.map((_, shotIndex) => `<button type="button" aria-label="Show ${app.name} screenshot ${shotIndex + 1}" ${shotIndex === 0 ? 'aria-current="true"' : ""}></button>`).join("")}</div><div class="control-group"><button class="previous" type="button" aria-label="Previous ${app.name} screenshot">←</button><button class="next" type="button" aria-label="Next ${app.name} screenshot">→</button></div></div>
-    </div>
-  </article>
-`,
+    (app) =>
+      `<article class="project project-${app.id}" id="${app.id}" aria-labelledby="${app.id}-title">${layouts[app.id](app)}</article>`,
   )
   .join("");
-
 document.querySelector("#social-links").innerHTML = Object.entries(
   socialProfiles,
 )
-  .map(([key, url]) => {
-    const label = { linkedin: "LinkedIn", github: "GitHub", x: "X / Twitter" }[
-      key
-    ];
-    return url
-      ? `<a href="${url}" target="_blank" rel="noopener noreferrer"><span>${label}</span><span aria-hidden="true">↗</span></a>`
-      : `<div class="pending-social"><span>${label}</span><small>Profile link coming soon</small></div>`;
-  })
+  .map(
+    ([key, url]) =>
+      `<a href="${url}" target="_blank" rel="noopener noreferrer">${{ linkedin: "LinkedIn", github: "GitHub", x: "X" }[key]} ↗</a>`,
+  )
   .join("");
 document.querySelector("#year").textContent = new Date().getFullYear();
+
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const scrollBehavior = () => (reducedMotion.matches ? "instant" : "smooth");
 
 for (const carousel of document.querySelectorAll(".carousel")) {
   const track = carousel.querySelector(".carousel-track");
   const slides = [...track.children];
-  const dots = [...carousel.querySelectorAll(".dots button")];
-  const currentIndex = () => Math.round(track.scrollLeft / track.clientWidth);
+  const choices = [...carousel.querySelectorAll(".slide-picker button")];
+  let activeIndex = 0;
+  const currentIndex = () =>
+    Math.max(
+      0,
+      Math.min(
+        slides.length - 1,
+        Math.round(track.scrollLeft / track.clientWidth),
+      ),
+    );
   const goTo = (index) => {
-    const target = (index + slides.length) % slides.length;
+    const targetIndex = (index + slides.length) % slides.length;
     track.scrollTo({
-      left: target * track.clientWidth,
+      left: targetIndex * track.clientWidth,
       behavior: scrollBehavior(),
     });
+  };
+  const updateSlide = () => {
+    const index = currentIndex();
+    if (index === activeIndex) return;
+    activeIndex = index;
+    slides.forEach((slide, i) => {
+      slide.inert = i !== index;
+      if (i === index) slide.removeAttribute("aria-hidden");
+      else slide.setAttribute("aria-hidden", "true");
+    });
+    choices.forEach((choice, i) =>
+      i === index
+        ? choice.setAttribute("aria-current", "true")
+        : choice.removeAttribute("aria-current"),
+    );
+    carousel.querySelector(".gallery-status").textContent =
+      slides[index].querySelector("figcaption").textContent;
   };
   carousel
     .querySelector(".previous")
@@ -225,27 +271,15 @@ for (const carousel of document.querySelectorAll(".carousel")) {
   carousel
     .querySelector(".next")
     .addEventListener("click", () => goTo(currentIndex() + 1));
-  dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
+  choices.forEach((choice, i) =>
+    choice.addEventListener("click", () => goTo(i)),
+  );
   let scrollFrame;
   track.addEventListener(
     "scroll",
     () => {
       cancelAnimationFrame(scrollFrame);
-      scrollFrame = requestAnimationFrame(() => {
-        const index = currentIndex();
-        slides.forEach((slide, i) => {
-          slide.inert = i !== index;
-          if (i === index) slide.removeAttribute("aria-hidden");
-          else slide.setAttribute("aria-hidden", "true");
-        });
-        dots.forEach((dot, i) =>
-          i === index
-            ? dot.setAttribute("aria-current", "true")
-            : dot.removeAttribute("aria-current"),
-        );
-        carousel.querySelector(".slide-count").textContent =
-          `${String(index + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
-      });
+      scrollFrame = requestAnimationFrame(updateSlide);
     },
     { passive: true },
   );
@@ -257,9 +291,9 @@ for (const carousel of document.querySelectorAll(".carousel")) {
   });
   let oldWidth = track.clientWidth;
   new ResizeObserver(() => {
-    const index = Math.round(track.scrollLeft / oldWidth);
+    if (track.clientWidth === oldWidth || !track.clientWidth) return;
     oldWidth = track.clientWidth;
-    track.scrollTo({ left: index * oldWidth, behavior: "instant" });
+    track.scrollTo({ left: activeIndex * oldWidth, behavior: "instant" });
   }).observe(track);
 }
 
@@ -288,64 +322,3 @@ dialog.addEventListener("click", (event) => {
       dialog.close();
   }
 });
-
-if ("IntersectionObserver" in window) {
-  if (!reducedMotion.matches)
-    document.documentElement.classList.add("motion-ready");
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries)
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-    },
-    { threshold: 0.06 },
-  );
-  document
-    .querySelectorAll(".reveal")
-    .forEach((element) => revealObserver.observe(element));
-  const appObserver = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries)
-        if (entry.isIntersecting) {
-          const navigation = document.querySelector(".app-nav");
-          document.querySelectorAll(".app-nav a").forEach((link) => {
-            if (link.getAttribute("href") === `#${entry.target.id}`) {
-              link.setAttribute("aria-current", "location");
-              if (navigation.scrollWidth > navigation.clientWidth)
-                navigation.scrollTo({
-                  left:
-                    link.offsetLeft -
-                    (navigation.clientWidth - link.offsetWidth) / 2,
-                  behavior: scrollBehavior(),
-                });
-            } else link.removeAttribute("aria-current");
-          });
-        }
-    },
-    { rootMargin: "-15% 0px -45% 0px", threshold: 0 },
-  );
-  document
-    .querySelectorAll(".showcase")
-    .forEach((element) => appObserver.observe(element));
-}
-let progressFrame;
-function updateProgress() {
-  const available = document.documentElement.scrollHeight - window.innerHeight;
-  document.querySelector(".scroll-progress").style.transform =
-    `scaleX(${available > 0 ? window.scrollY / available : 0})`;
-}
-window.addEventListener(
-  "scroll",
-  () => {
-    if (!progressFrame)
-      progressFrame = requestAnimationFrame(() => {
-        updateProgress();
-        progressFrame = null;
-      });
-  },
-  { passive: true },
-);
-window.addEventListener("resize", updateProgress);
-updateProgress();

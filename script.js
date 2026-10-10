@@ -126,6 +126,45 @@ const apps = [
       ["grave-shop.jpg", "Better equipment. Bigger decisions.", "wide"],
     ],
   },
+
+  {
+    id: "myfurbaby",
+    name: "MyFurBaby",
+    category: "Personal pets & Home Screen widgets",
+    icon: "myfurbaby-icon.png",
+    accent: "#d0b8ef",
+    tint: "#302538",
+    tagline: "Your Home Screen. Their happy place.",
+    description:
+      "Dream up your own little companion, give them a cozy home on your iPhone Home Screen, and take them on photo adventures. Choose their species, colors, accessories, and name to make your Fur Baby your own.",
+    features: [
+      "Small and wide widgets with a clock, daily quote, or pet info.",
+      "Playful and sleepy animations, with backgrounds that feel like you.",
+      "Bring your pet into your photos. Save and share the adventures.",
+    ],
+    demo: "https://greggroll.github.io/MyFurBaby/",
+    cta: "Meet MyFurBaby",
+    source: "https://github.com/GreggRoll/MyFurBaby",
+    note: "Coming soon to the App Store · Widgets and adventures require Pro; AI creations use credits.",
+    galleryLabel: "A LITTLE FRIEND. A LITTLE MORE JOY.",
+    shots: [
+      ["myfurbaby-pet.jpg", "A sleepy companion, right on your Home Screen."],
+      [
+        "myfurbaby-clock.jpg",
+        "A clock with a colorful little sidekick.",
+        "wide",
+      ],
+      [
+        "myfurbaby-quote.jpg",
+        "A daily quote. A cozy corner. Your Fur Baby.",
+        "wide",
+      ],
+      [
+        "myfurbaby-adventures.jpg",
+        "Take your little friend on a photo adventure.",
+      ],
+    ],
+  },
 ];
 
 const showcases = document.querySelector("#app-showcases");

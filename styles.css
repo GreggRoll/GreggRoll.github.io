@@ -358,8 +358,9 @@ h2 span {
 .app-nav {
   position: sticky;
   top: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: #151515f2;
@@ -367,6 +368,7 @@ h2 span {
   z-index: 10;
 }
 .app-nav a {
+  flex: 1 0 auto;
   padding: 20px 12px;
   position: relative;
   font-size: 12px;

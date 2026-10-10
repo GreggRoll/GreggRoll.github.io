@@ -31,17 +31,17 @@ const apps = [
     galleryLabel: "INSIDE THE WEB PREVIEW",
     shots: [
       [
-        "time-boxed-planner.jpg",
+        "time-boxed-workspace.svg",
         "Your daily workspace, all in one place.",
         "wide",
       ],
       [
-        "time-boxed-priorities.jpg",
+        "time-boxed-thoughts.svg",
         "Priorities and a little room to think.",
         "wide",
       ],
       [
-        "time-boxed-timeline.jpg",
+        "time-boxed-schedule.svg",
         "Give the important things time on your timeline.",
         "wide",
       ],

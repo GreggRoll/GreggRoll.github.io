@@ -17,7 +17,7 @@ Open http://127.0.0.1:4173. App content, screenshot paths, and social profiles a
 - Feature copy and destinations come from the four app projects and their public demos.
 - MyJourney and VO2Cue images are their existing public showcase assets.
 - Grave Maintenance images show its browser prototype.
-- Time Boxed images show its interactive **web preview**, clearly labeled on the homepage. Replace with native app screenshots when available.
+- Time Boxed uses crisp SVG previews of the web planner’s actual layout and sample content. These remain clearly labeled as web previews on the homepage.
 - LinkedIn links to the confirmed Gregory Adams profile, with sharing parameters removed. X links to the account listed on GreggRoll’s public GitHub profile.
 
 ## Interaction

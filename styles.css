@@ -2358,3 +2358,121 @@ footer {
     transform: scale(0.8);
   }
 }
+/* Complete storefront artwork, fitted inside the device without cropping. */
+.screenshot-gallery {
+  background: #080a0f;
+  color: #eeeae2;
+}
+.gallery-slides {
+  position: absolute;
+  top: 42px;
+  bottom: 56px;
+  left: 0;
+  right: 0;
+}
+.gallery-shot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s,
+    visibility 0.4s;
+}
+.gallery-shot.is-current {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery-controls {
+  position: absolute;
+  bottom: 23px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 27px;
+}
+.gallery-controls button {
+  width: 34px;
+  height: 27px;
+  border: 1px solid #ffffff30;
+  border-radius: 7px;
+  background: #ffffff0c;
+  color: #eeeae2;
+  font-size: 17px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.gallery-controls button:hover {
+  background: #ffffff22;
+  border-color: #f2a27f;
+}
+.gallery-count {
+  font-size: 9px;
+  letter-spacing: 1.1px;
+  font-variant-numeric: tabular-nums;
+  color: #b9b5ac;
+}
+.phone-screen:has(.app-window.is-visible) .home-indicator:after {
+  background: #eeeae2;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.motion-paused .gallery-shot {
+  transition: none;
+}
+@media (max-width: 760px) {
+  .gallery-slides {
+    top: 33px;
+    bottom: 47px;
+  }
+  .gallery-controls {
+    bottom: 20px;
+    left: 12px;
+    right: 12px;
+    height: 23px;
+  }
+  .gallery-controls button {
+    width: 30px;
+    height: 23px;
+    font-size: 15px;
+  }
+  .gallery-count {
+    font-size: 8px;
+  }
+}
+@media (max-width: 540px) {
+  .gallery-slides {
+    top: 29px;
+    bottom: 42px;
+  }
+  .gallery-controls {
+    bottom: 18px;
+    left: 10px;
+    right: 10px;
+    height: 22px;
+  }
+  .gallery-controls button {
+    width: 27px;
+    height: 22px;
+    font-size: 14px;
+  }
+  .gallery-count {
+    font-size: 7px;
+  }
+}

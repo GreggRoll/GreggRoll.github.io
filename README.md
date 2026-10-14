@@ -20,7 +20,7 @@ The opening scene introduces Greg beside an interactive iPhone Home Screen. Scro
 4. My Fur Baby
 5. Grave Maintenance
 
-The description and links on the left follow the current app. Each preview expands from its actual Home Screen icon and returns there before the next opens. Scrolling backward reverses the sequence. The final scene has enough scroll space to close before the biography comes into view.
+The description and links on the left follow the current app. While an app is fully open, its screenshots cycle every 4.5 seconds. Previous/next buttons and keyboard arrows provide manual browsing, with wraparound. Cycling pauses during mouse hover or keyboard focus, while the tab is hidden, and when the app is closing. The shared pause/play control also pauses the slideshow; reduced motion disables automatic cycling by default. Each preview expands from its actual Home Screen icon and returns there before the next opens. Scrolling backward reverses the sequence. The final scene has enough scroll space to close before the biography comes into view.
 
 Click an app icon or the pet widget to jump to its fully open preview. The iPhone dock and the website’s bottom bar provide email (GregInPublic@icloud.com), X, GitHub, and LinkedIn links. The iPhone Home indicator returns to the introduction. App fragment links (for example `/#time-boxed`) work on entry and when navigating browser history. On phones, copy sits above the device; shorter screens use a smaller device and tighter composition.
 
@@ -32,10 +32,11 @@ Inactive panels are removed from keyboard and assistive-technology navigation. N
 - Each app links to its existing website/demo and GitHub repository.
 - VO2Cue, MyJourney, and Time Boxed have their existing App Store links.
 - My Fur Baby is labeled coming soon to the App Store; Grave Maintenance is identified as a browser prototype. No store URLs are invented.
-- MyJourney and VO2Cue previews use the existing app images.
-- Time Boxed uses its existing SVG web-planner preview, explicitly labeled as a web preview.
-- Grave Maintenance uses the existing cemetery game screenshot.
-- The My Fur Baby widget and clock videos and their still posters come from the app's public website assets. Videos are local, muted, looped, and inline; no generated substitute pet is used.
+- Four galleries use the complete iPhone App Store screenshot sets from the Desktop app projects: VO2Cue (6), MyJourney (3), Time Boxed (7), and My Fur Baby (8).
+- Grave Maintenance has no App Store set; its gallery cycles 4 browser-game captures from the Desktop project.
+- Screenshot artwork is displayed proportionally without cropping. WebP derivatives keep the full artwork while reducing download size; the original Desktop exports are unchanged. See `assets/screenshots/README.md` for source folders.
+- The animated boxing-rhino Home Screen widget remains separate from My Fur Baby’s screenshot gallery, with its existing pause/play behavior.
+- VO2Cue’s app-page link is https://greggroll.github.io/VO2Cue/.
 - The homepage uses the original charcoal dark palette with peach accents.
 - The Home Screen has one medium animated boxing rhino widget, copied with its poster from the supplied local MyFurBaby website assets. The decorative Make Your Day widget is removed.
 - The homepage lists the requested contact email and contains no phone number or street address.
@@ -43,7 +44,7 @@ Inactive panels are removed from keyboard and assistive-technology navigation. N
 
 ## Verification
 
-The redesign was checked in Chromium at desktop, tablet, and mobile sizes, including 1440×900, 1024×768, 768×1024, 390×844, 375×667, and 320×568. Browser checks cover all five open/hold/close sequences, backward scrolling, app-icon and Home navigation, direct fragments, reduced motion, video pause/play, horizontal overflow, and the no-JavaScript fallback. Local assets load successfully without page errors.
+The redesign was checked in Chromium at desktop, tablet, and mobile sizes, including 1440×900, 1024×768, 768×1024, 390×844, 375×667, and 320×568. Browser checks cover all five open/hold/close sequences, backward scrolling, app-icon and Home navigation, direct fragments, reduced motion, video pause/play, horizontal overflow, and the no-JavaScript fallback. Gallery checks additionally verify all 28 images, cycling for every app, wraparound, pause/play, keyboard navigation, reduced motion, and controls at mobile and short desktop sizes. Local assets load successfully without page errors.
 
 For source checks:
 

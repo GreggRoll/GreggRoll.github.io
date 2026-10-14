@@ -14,13 +14,50 @@ const apps = [
       "An interval timer for iPhone and Apple Watch. It guides Norwegian-style 4×4 workouts with haptics, tones, and optional spoken cues.",
     details:
       "Use a 4×4 session or set your own intervals. Keep a local workout history and save sessions to Apple Health.",
-    page: "https://greggroll.github.io/vo2cue/demo/",
-    cta: "Try the timer",
+    page: "https://greggroll.github.io/VO2Cue/",
+    cta: "Explore VO2Cue",
     source: "https://github.com/GreggRoll/vo2cue",
     store: "https://apps.apple.com/us/app/vo2cue/id6804899072",
     caption: "VO2Cue · A cue for every interval.",
-    preview: `<div class="promo-heading"><p class="promo-kicker">VO2Cue · iPhone + Apple Watch</p><h3>Less watching.<br>More working out.</h3><p>Your next interval. Right on cue.</p></div><div class="vo2-ring" aria-hidden="true"></div><img class="vo2-screenshot" src="assets/vo2cue-timer.jpg" alt="VO2Cue live sprint timer, round 1 of 4, with pause and skip controls" width="360" height="780">`,
-    previewClass: "promo-vo2",
+    screenshotKind: "App Store screenshots",
+    screenshots: [
+      {
+        src: "screenshots/vo2cue/01.webp",
+        width: 828,
+        height: 1800,
+        caption: "Train hard. Not the clock.",
+      },
+      {
+        src: "screenshots/vo2cue/02.webp",
+        width: 828,
+        height: 1800,
+        caption: "Your workout. Your way.",
+      },
+      {
+        src: "screenshots/vo2cue/03.webp",
+        width: 828,
+        height: 1800,
+        caption: "One coach for every cardio day.",
+      },
+      {
+        src: "screenshots/vo2cue/04.webp",
+        width: 828,
+        height: 1800,
+        caption: "The same workout. Right on your wrist.",
+      },
+      {
+        src: "screenshots/vo2cue/05.webp",
+        width: 828,
+        height: 1800,
+        caption: "Progress that stays yours.",
+      },
+      {
+        src: "screenshots/vo2cue/06.webp",
+        width: 828,
+        height: 1800,
+        caption: "Your goal. One tap closer.",
+      },
+    ],
   },
   {
     id: "myjourney",
@@ -40,8 +77,27 @@ const apps = [
     store:
       "https://apps.apple.com/us/app/my-journey-progress-in-pics/id6762496363",
     caption: "MyJourney · Small changes. A bigger picture.",
-    preview: `<img class="full-promo" src="assets/myjourney-compare.png" alt="MyJourney promotional image showing side-by-side progress photo comparison" width="396" height="860">`,
-    previewClass: "promo-journey",
+    screenshotKind: "App Store screenshots",
+    screenshots: [
+      {
+        src: "screenshots/myjourney/01.webp",
+        width: 828,
+        height: 1792,
+        caption: "See every change.",
+      },
+      {
+        src: "screenshots/myjourney/02.webp",
+        width: 828,
+        height: 1792,
+        caption: "Make progress a habit.",
+      },
+      {
+        src: "screenshots/myjourney/03.webp",
+        width: 828,
+        height: 1792,
+        caption: "Your journey stays yours.",
+      },
+    ],
   },
   {
     id: "time-boxed",
@@ -61,8 +117,51 @@ const apps = [
     store:
       "https://apps.apple.com/us/app/time-boxed-focus-your-day/id6762071236",
     caption: "Time Boxed · A little structure. A clearer day.",
-    preview: `<div class="promo-heading"><p class="promo-kicker">Time Boxed</p><h3>A place for<br>every priority.</h3><p>Get it out of your head.<br>Give it time in your day.</p></div><div class="planner-preview"><p>YOUR DAY, WITH INTENTION</p><h4>Let’s make a plan.</h4><span class="planner-label">Give your priorities a little time</span><img src="assets/time-boxed-schedule.svg" alt="Time Boxed web planner daily schedule in time blocks"></div><p class="planner-promonote">Web planner preview · Also available for iPhone & iPad</p>`,
-    previewClass: "promo-planner",
+    screenshotKind: "App Store screenshots",
+    screenshots: [
+      {
+        src: "screenshots/time-boxed/01.webp",
+        width: 828,
+        height: 1792,
+        caption: "Stop juggling. Start doing.",
+      },
+      {
+        src: "screenshots/time-boxed/02.webp",
+        width: 828,
+        height: 1792,
+        caption: "Brain dump. Day planned.",
+      },
+      {
+        src: "screenshots/time-boxed/03.webp",
+        width: 828,
+        height: 1792,
+        caption: "Give your tasks a time to happen.",
+      },
+      {
+        src: "screenshots/time-boxed/04.webp",
+        width: 828,
+        height: 1792,
+        caption: "Pick up where you left off.",
+      },
+      {
+        src: "screenshots/time-boxed/05.webp",
+        width: 828,
+        height: 1792,
+        caption: "Your plan. Ready to go.",
+      },
+      {
+        src: "screenshots/time-boxed/06.webp",
+        width: 828,
+        height: 1792,
+        caption: "A calmer view. Day or night.",
+      },
+      {
+        src: "screenshots/time-boxed/07.webp",
+        width: 828,
+        height: 1792,
+        caption: "Your day. Your rhythm.",
+      },
+    ],
   },
   {
     id: "myfurbaby",
@@ -82,8 +181,57 @@ const apps = [
     availability: "App Store · Coming soon",
     note: "Widgets, animations, and photo adventures are Pro features. AI creations use credits.",
     caption: "My Fur Baby · Real widgets. Really cute company.",
-    preview: `<div class="promo-heading"><p class="promo-kicker">My Fur Baby</p><h3>Your Home Screen.<br>Their happy place.</h3><p>A playful hello. A sleepy little cuddle.</p></div><video class="pet-clock-preview" data-motion="pet" src="assets/myfurbaby-clock.mp4" poster="assets/myfurbaby-clock-poster.jpg" muted loop playsinline preload="metadata" aria-label="Animated My Fur Baby clock widget with a colorful companion"></video><video class="pet-sleep-preview" data-motion="pet" src="assets/myfurbaby-widget.mp4" poster="assets/myfurbaby-widget-poster.jpg" muted loop playsinline preload="metadata" aria-label="Sterling the white tiger sleeping in a My Fur Baby widget"></video><p class="pet-promo-label">A little love, every time you unlock.</p>`,
-    previewClass: "promo-pet",
+    screenshotKind: "App Store screenshots",
+    screenshots: [
+      {
+        src: "screenshots/myfurbaby/01.webp",
+        width: 828,
+        height: 1795,
+        caption: "Dream a pet. Find a friend.",
+      },
+      {
+        src: "screenshots/myfurbaby/02.webp",
+        width: 828,
+        height: 1795,
+        caption: "Every detail. Entirely yours.",
+      },
+      {
+        src: "screenshots/myfurbaby/03.webp",
+        width: 828,
+        height: 1795,
+        caption: "A happy home. On your screen.",
+      },
+      {
+        src: "screenshots/myfurbaby/04.webp",
+        width: 828,
+        height: 1795,
+        caption: "Playful days. Sleepy nights.",
+      },
+      {
+        src: "screenshots/myfurbaby/05.webp",
+        width: 828,
+        height: 1795,
+        caption: "Dream up their world.",
+      },
+      {
+        src: "screenshots/myfurbaby/06.webp",
+        width: 828,
+        height: 1795,
+        caption: "Your day, with a little more joy.",
+      },
+      {
+        src: "screenshots/myfurbaby/07.webp",
+        width: 828,
+        height: 1795,
+        caption: "Take them anywhere.",
+      },
+      {
+        src: "screenshots/myfurbaby/08.webp",
+        width: 828,
+        height: 1795,
+        caption: "Little moments. Forever memories.",
+      },
+    ],
   },
   {
     id: "grave-maintenance",
@@ -102,8 +250,33 @@ const apps = [
     availability: "Browser game · No App Store release",
     note: "Browser prototype. Co-op needs the game server to be online.",
     caption: "Grave Maintenance · Try not to wake the residents.",
-    preview: `<div class="promo-heading"><p class="promo-kicker">Grave Maintenance</p><h3>The night shift<br>starts here.</h3><p>Briar Hollow is counting on you.</p></div><div class="grave-preview"><img src="assets/grave-game.jpg" alt="Grave Maintenance browser game showing a night shift at Briar Hollow cemetery" width="1233" height="720"></div><div class="grave-promo-bottom"><p>Mow. Rake. Clean the graves.<br>Get back to the truck before 3 AM.</p><span>Browser game · Solo + co-op</span></div>`,
-    previewClass: "promo-grave",
+    screenshotKind: "Browser game screenshots",
+    screenshots: [
+      {
+        src: "screenshots/grave-maintenance/01.webp",
+        width: 390,
+        height: 844,
+        caption: "The cemetery on a phone.",
+      },
+      {
+        src: "screenshots/grave-maintenance/02.webp",
+        width: 828,
+        height: 466,
+        caption: "Welcome to the night shift.",
+      },
+      {
+        src: "screenshots/grave-maintenance/03.webp",
+        width: 828,
+        height: 796,
+        caption: "Choose your equipment at the trailer.",
+      },
+      {
+        src: "screenshots/grave-maintenance/04.webp",
+        width: 828,
+        height: 796,
+        caption: "Upgrade your tools at the shop.",
+      },
+    ],
   },
 ];
 
@@ -137,7 +310,11 @@ document.querySelector("#home-apps").innerHTML = apps
 document.querySelector("#phone-apps").innerHTML = apps
   .map(
     (app) =>
-      `<div class="app-window ${app.previewClass}" data-app="${app.id}" role="group" aria-label="${app.name} promotional preview" aria-hidden="true">${app.preview}</div>`,
+      `<div class="app-window screenshot-gallery" data-app="${app.id}" role="region" aria-roledescription="carousel" aria-label="${app.name} ${app.screenshotKind}" aria-hidden="true">
+      <div class="gallery-slides">${app.screenshots.map((shot, i) => `<img class="gallery-shot${i === 0 ? " is-current" : ""}" ${i === 0 ? `src="assets/${shot.src}"` : ""} data-src="assets/${shot.src}" alt="${app.name}: ${shot.caption}" width="${shot.width}" height="${shot.height}" aria-hidden="${i !== 0}" decoding="async">`).join("")}</div>
+      <nav class="gallery-controls" aria-label="${app.name} screenshots"><button type="button" data-gallery-direction="-1" aria-label="Previous ${app.name} screenshot">←</button><span class="gallery-count" aria-live="off" aria-label="Screenshot 1 of ${app.screenshots.length}">01 / ${String(app.screenshots.length).padStart(2, "0")}</span><button type="button" data-gallery-direction="1" aria-label="Next ${app.name} screenshot">→</button></nav>
+      <span class="sr-only gallery-status" aria-live="polite" aria-atomic="true"></span>
+    </div>`,
   )
   .join("");
 const contacts = [
@@ -209,6 +386,111 @@ let stepPositions = [];
 let iconOrigins = [];
 let frame = 0;
 let videoState = "";
+const galleries = windows.map((element, index) => ({
+  element,
+  app: apps[index],
+  images: [...element.querySelectorAll(".gallery-shot")],
+  index: 0,
+  pending: null,
+  version: 0,
+  hovered: false,
+}));
+let galleryTimer = 0;
+let galleryPlaying = 0;
+const galleryDelay = 4500;
+
+function prepareShot(gallery, index) {
+  const image = gallery.images[index];
+  if (!image.getAttribute("src")) image.src = image.dataset.src;
+  return image;
+}
+
+async function showShot(gallery, requested, announce = false) {
+  const index = (requested + gallery.images.length) % gallery.images.length;
+  const version = ++gallery.version;
+  gallery.pending = index;
+  const image = prepareShot(gallery, index);
+  try {
+    await image.decode();
+  } catch {
+    if (version === gallery.version) gallery.pending = null;
+    return;
+  }
+  if (version !== gallery.version) return;
+  gallery.index = index;
+  gallery.pending = null;
+  gallery.element.dataset.galleryIndex = String(index);
+  gallery.images.forEach((shot, i) => {
+    shot.classList.toggle("is-current", i === index);
+    shot.setAttribute("aria-hidden", String(i !== index));
+  });
+  const count = gallery.element.querySelector(".gallery-count");
+  count.textContent = `${String(index + 1).padStart(2, "0")} / ${String(gallery.images.length).padStart(2, "0")}`;
+  count.setAttribute(
+    "aria-label",
+    `Screenshot ${index + 1} of ${gallery.images.length}`,
+  );
+  if (announce)
+    gallery.element.querySelector(".gallery-status").textContent =
+      `Screenshot ${index + 1} of ${gallery.images.length}. ${gallery.app.screenshots[index].caption}`;
+  prepareShot(gallery, (index + 1) % gallery.images.length);
+}
+
+function syncGalleryPlayback() {
+  const gallery = galleries[current - 1];
+  const active = gallery && openAmount >= 0.95;
+  if (active) prepareShot(gallery, (gallery.index + 1) % gallery.images.length);
+  const canPlay =
+    active &&
+    !paused &&
+    !document.hidden &&
+    !gallery.hovered &&
+    !gallery.element.contains(document.activeElement);
+  const next = canPlay ? current : 0;
+  if (next === galleryPlaying) return;
+  clearTimeout(galleryTimer);
+  galleryPlaying = next;
+  if (canPlay)
+    galleryTimer = setTimeout(async () => {
+      galleryPlaying = 0;
+      await showShot(gallery, gallery.index + 1);
+      syncGalleryPlayback();
+    }, galleryDelay);
+}
+
+for (const gallery of galleries) {
+  gallery.element.dataset.galleryIndex = "0";
+  const advance = (direction) =>
+    showShot(gallery, (gallery.pending ?? gallery.index) + direction, true);
+  gallery.element
+    .querySelectorAll("[data-gallery-direction]")
+    .forEach((button) =>
+      button.addEventListener("click", () =>
+        advance(Number(button.dataset.galleryDirection)),
+      ),
+    );
+  gallery.element.addEventListener("keydown", (event) => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey)
+      return;
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      advance(event.key === "ArrowRight" ? 1 : -1);
+    }
+  });
+  gallery.element.addEventListener("pointerenter", (event) => {
+    if (event.pointerType !== "mouse") return;
+    gallery.hovered = true;
+    syncGalleryPlayback();
+  });
+  gallery.element.addEventListener("pointerleave", () => {
+    gallery.hovered = false;
+    syncGalleryPlayback();
+  });
+  gallery.element.addEventListener("focusin", syncGalleryPlayback);
+  gallery.element.addEventListener("focusout", () =>
+    requestAnimationFrame(syncGalleryPlayback),
+  );
+}
 
 function syncMotion() {
   const state = `${paused}:${document.hidden}:${current}:${openAmount > 0.15}:${openAmount < 0.95}`;
@@ -312,6 +594,7 @@ function render() {
   home.setAttribute("aria-hidden", String(amount > 0.5));
   home.style.filter = `brightness(${1 - amount * 0.14})`;
   syncMotion();
+  syncGalleryPlayback();
 }
 function schedule() {
   if (!frame) frame = requestAnimationFrame(render);
@@ -355,6 +638,7 @@ reducedMotion.addEventListener("change", () => {
 document.addEventListener("visibilitychange", () => {
   videoState = "";
   syncMotion();
+  syncGalleryPlayback();
 });
 window.addEventListener("scroll", schedule, { passive: true });
 window.addEventListener("resize", measure);

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="theme-color" content="#191919" />
     <meta
       name="description"
       content="I'm Greg Adams, a U.S. Air Force veteran, data scientist, and independent founder. Explore VO2Cue, MyJourney, Time Boxed, My Fur Baby, and Grave Maintenance."
@@ -117,35 +117,29 @@
                         <a
                           href="#myfurbaby"
                           class="pet-widget"
-                          aria-label="Open My Fur Baby, animated pet widget"
+                          aria-label="Open My Fur Baby, animated boxing rhino widget"
                           ><video
                             data-motion="home"
-                            src="assets/myfurbaby-widget.mp4"
-                            poster="assets/myfurbaby-widget-poster.jpg"
+                            src="assets/myfurbaby-rhino.mp4"
+                            poster="assets/myfurbaby-rhino-poster.jpg"
                             muted
                             loop
                             playsinline
                             preload="metadata"
-                            aria-label="Sterling the white tiger sleeping in a My Fur Baby widget"
+                            aria-label="A white rhino boxing beside a daily quote in a medium My Fur Baby widget"
                           ></video
                           ><span>My Fur Baby</span></a
                         >
-                        <div class="date-widget" aria-hidden="true">
-                          <span>A little space<br />for big ideas.</span
-                          ><strong>Make<br />your day.</strong
-                          ><span class="widget-spark">✳</span>
-                        </div>
                       </div>
                       <div class="home-apps" id="home-apps"></div>
                       <div class="home-page-dots" aria-hidden="true">
                         <i></i><i></i>
                       </div>
-                      <div class="ios-dock" aria-hidden="true">
-                        <span class="dock-icon dock-phone">☎</span
-                        ><span class="dock-icon dock-browser">◈</span
-                        ><span class="dock-icon dock-message">●</span
-                        ><span class="dock-icon dock-music">♫</span>
-                      </div>
+                      <nav
+                        class="ios-dock"
+                        id="contact-dock"
+                        aria-label="Contact Greg from the iPhone dock"
+                      ></nav>
                     </div>
                     <div id="phone-apps"></div>
                     <div class="dynamic-island" aria-hidden="true"></div>
@@ -168,16 +162,14 @@
           </div>
           <div class="stage-bottom">
             <span class="collection-label"
-              >THE APP COLLECTION <span aria-hidden="true">↘</span></span
+              >LET’S CONNECT <span aria-hidden="true">↗</span></span
             >
             <nav
-              class="app-index"
-              id="app-index"
-              aria-label="Choose an app"
+              class="contact-bar"
+              id="contact-bar"
+              aria-label="Contact Greg"
             ></nav>
-            <span class="chapter-count" id="chapter-count" aria-hidden="true"
-              >00 / 05</span
-            >
+            <a class="bar-back-top" href="#main">Back to top ↑</a>
           </div>
         </div>
         <div class="scroll-track" id="scroll-track">
@@ -209,24 +201,32 @@
             This is where I keep them all together. If you try an app, I’d like
             to hear what worked and what didn’t.
           </p>
-          <div class="social-links">
+          <nav
+            class="social-links"
+            id="social-links"
+            aria-label="Find Greg online"
+          >
             <a
-              href="https://www.linkedin.com/in/gregory-adams/"
+              href="mailto:GregInPublic@icloud.com"
+              aria-label="Email Greg at GregInPublic@icloud.com"
+              >Email ↗</a
+            ><a
+              href="https://x.com/aGreggRoll"
               target="_blank"
               rel="noopener noreferrer"
-              >LinkedIn ↗</a
+              >X ↗</a
             ><a
               href="https://github.com/GreggRoll"
               target="_blank"
               rel="noopener noreferrer"
               >GitHub ↗</a
             ><a
-              href="https://x.com/aGreggRoll"
+              href="https://www.linkedin.com/in/gregory-adams/"
               target="_blank"
               rel="noopener noreferrer"
-              >X ↗</a
+              >LinkedIn ↗</a
             >
-          </div>
+          </nav>
         </div>
       </section>
       <footer class="wrap">

@@ -8,8 +8,8 @@ const apps = [
     icon: "vo2cue-icon.png",
     category: "Fitness & training",
     headline: "Find your rhythm.",
-    accent: "#466544",
-    halo: "#e1e7d7",
+    accent: "#a7c795",
+    halo: "#253125",
     description:
       "An interval timer for iPhone and Apple Watch. It guides Norwegian-style 4×4 workouts with haptics, tones, and optional spoken cues.",
     details:
@@ -28,8 +28,8 @@ const apps = [
     icon: "myjourney-icon.png",
     category: "Progress & perspective",
     headline: "See how far you’ve come.",
-    accent: "#7b5194",
-    halo: "#e9e0ed",
+    accent: "#cfb0e4",
+    halo: "#302739",
     description:
       "A progress photo journal. Take consistent photos, compare them side by side, and keep a timeline you can look back through.",
     details:
@@ -49,8 +49,8 @@ const apps = [
     icon: "time-boxed-icon.png",
     category: "Planning & focus",
     headline: "Make room for what matters.",
-    accent: "#536c43",
-    halo: "#e4e9da",
+    accent: "#b5c995",
+    halo: "#2b3024",
     description:
       "A daily planner for iPhone and iPad. Set your priorities, get loose thoughts out of your head, and put tasks on a timeline.",
     details:
@@ -70,8 +70,8 @@ const apps = [
     icon: "myfurbaby-icon.png",
     category: "Widgets & little companions",
     headline: "A little closer. Always.",
-    accent: "#826299",
-    halo: "#e7deef",
+    accent: "#cfb0e4",
+    halo: "#32263b",
     description:
       "Make a virtual pet for your iPhone Home Screen. Pick its species, colors, accessories, and name, then give it a widget to live in.",
     details:
@@ -90,8 +90,8 @@ const apps = [
     name: "Grave Maintenance",
     category: "Games & after-hours adventures",
     headline: "One shift. Five minutes. Stay quiet.",
-    accent: "#5d6b45",
-    halo: "#dfe3d8",
+    accent: "#bfcba0",
+    halo: "#2a3027",
     description:
       "You have five minutes to finish a cemetery maintenance shift. Mow, rake, empty the trash, and clean the graves. Try not to wake the residents.",
     details:
@@ -140,10 +140,44 @@ document.querySelector("#phone-apps").innerHTML = apps
       `<div class="app-window ${app.previewClass}" data-app="${app.id}" role="group" aria-label="${app.name} promotional preview" aria-hidden="true">${app.preview}</div>`,
   )
   .join("");
-document.querySelector("#app-index").innerHTML = apps
+const contacts = [
+  {
+    name: "Email",
+    href: "mailto:GregInPublic@icloud.com",
+    icon: "email",
+    svg: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
+  },
+  {
+    name: "X",
+    href: "https://x.com/aGreggRoll",
+    icon: "x",
+    svg: '<path d="m4 3 12 18h4L8 3H4Z"/><path d="m20 3-7 8M4 21l7-8"/>',
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/GreggRoll",
+    icon: "github",
+    svg: '<path d="M9 19c-4 1-4-2-6-2m12 5v-4c0-1 .2-1.7-.5-2.4 3-.3 6-1.5 6-5.6A4.4 4.4 0 0 0 19.3 7c.2-1 .2-2-.3-3-1 0-2 .5-3 1a13 13 0 0 0-8 0C7 4.5 6 4 5 4c-.5 1-.5 2-.3 3a4.4 4.4 0 0 0-1.2 3c0 4.1 3 5.3 6 5.6-.7.7-.5 1.4-.5 2.4v4"/>',
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/gregory-adams/",
+    icon: "linkedin",
+    svg: '<path d="M5 9v11M5 4v.1M10 20V9h4v2c1-3 6-3 6 2v7M14 12v8"/>',
+  },
+];
+const contactLink = (contact) =>
+  `<a href="${contact.href}" ${contact.icon === "email" ? 'aria-label="Email Greg at GregInPublic@icloud.com"' : external}>${contact.name} <span aria-hidden="true">↗</span></a>`;
+document.querySelector("#contact-bar").innerHTML = contacts
+  .map(contactLink)
+  .join("");
+document.querySelector("#social-links").innerHTML = contacts
+  .map(contactLink)
+  .join("");
+document.querySelector("#contact-dock").innerHTML = contacts
   .map(
-    (app, i) =>
-      `<a href="#${app.id}"><span>${String(i + 1).padStart(2, "0")}</span>${app.name}</a>`,
+    (contact) =>
+      `<a class="dock-contact" href="${contact.href}" aria-label="${contact.icon === "email" ? "Email Greg at GregInPublic@icloud.com" : `Greg on ${contact.name}`}" ${contact.icon === "email" ? "" : external}><span class="dock-icon dock-${contact.icon}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${contact.svg}</svg></span><span class="dock-label">${contact.name}</span></a>`,
   )
   .join("");
 document
@@ -163,7 +197,7 @@ const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const panels = [...document.querySelectorAll(".copy-panel")];
 const steps = [...document.querySelectorAll(".scroll-step")];
 const windows = [...document.querySelectorAll(".app-window")];
-const appLinks = [...document.querySelectorAll(".app-index a")];
+const appLinks = [...document.querySelectorAll(".home-app")];
 const videos = [...document.querySelectorAll("video[data-motion]")];
 const home = document.querySelector("#home-screen");
 const screen = document.querySelector(".phone-screen");
@@ -246,10 +280,10 @@ function render() {
     const app = apps[next - 1];
     document.documentElement.style.setProperty(
       "--accent",
-      app?.accent || "#b64929",
+      app?.accent || "#f2a27f",
     );
     document.querySelector(".phone-halo").style.background =
-      app?.halo || "#ebe6d9";
+      app?.halo || "#272723";
     panels.forEach((panel, i) => {
       panel.classList.toggle("is-active", i === next);
       panel.inert = i !== next;
@@ -262,8 +296,6 @@ function render() {
     );
     document.querySelector("#phone-caption").textContent =
       app?.caption || "Five apps. One curious mind.";
-    document.querySelector("#chapter-count").textContent =
-      `${String(next).padStart(2, "0")} / 05`;
   }
   windows.forEach((window, i) => {
     const visible = i === next - 1 && amount > 0.001;

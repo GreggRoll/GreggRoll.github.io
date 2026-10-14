@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap");
 :root {
-  --paper: #f7f5ef;
-  --ink: #252824;
-  --muted: #777971;
-  --line: #dedfd5;
-  --orange: #b64929;
-  --accent: #b64929;
+  --paper: #191919;
+  --ink: #eeeae2;
+  --muted: #b9b5ac;
+  --line: #41403b;
+  --orange: #f2a27f;
+  --accent: #f2a27f;
   --phone-width: 300px;
   --phone-height: 626px;
   --header-height: 88px;
-  color-scheme: light;
+  color-scheme: dark;
 }
 * {
   box-sizing: border-box;
@@ -47,7 +47,7 @@ button {
   border: 0;
 }
 ::selection {
-  background: #eec4b0;
+  background: #754533;
 }
 img,
 video {
@@ -152,7 +152,7 @@ h1 span {
 .intro-description {
   font-size: 17px;
   line-height: 1.7;
-  color: #55594f;
+  color: #cbc7be;
   margin-bottom: 16px;
 }
 .intro-detail {
@@ -179,17 +179,17 @@ h1 span {
   transform: translateY(-2px);
 }
 .primary {
-  background: var(--ink);
-  color: white;
+  background: var(--orange);
+  color: var(--paper);
 }
 .primary:hover {
-  background: var(--orange);
+  background: #f7bd9f;
 }
 .explore-button {
   background: var(--orange);
 }
 .explore-button:hover {
-  background: #94391f;
+  background: #f7bd9f;
 }
 .scroll-hint {
   font-size: 11px;
@@ -253,7 +253,7 @@ h1 span {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  background: #ebe6d9;
+  background: #272723;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -263,7 +263,7 @@ h1 span {
   content: "";
   position: absolute;
   inset: -30px;
-  border: 1px solid #e6e1d6;
+  border: 1px solid #3c3c34;
   border-radius: 50%;
 }
 .stage-note {
@@ -273,7 +273,7 @@ h1 span {
   font-family: Georgia, serif;
   font-size: 13px;
   font-style: italic;
-  color: #8c8f80;
+  color: #aba99e;
   writing-mode: vertical-rl;
   letter-spacing: 0.6px;
 }
@@ -384,7 +384,8 @@ h1 span {
 .home-screen {
   position: absolute;
   inset: 0;
-  background: linear-gradient(150deg, #cbdac6 0%, #8ca995 48%, #314d43 100%);
+  background: linear-gradient(150deg, #2f4840 0%, #1c342e 48%, #101e1b 100%);
+  color: #f4f0e6;
   overflow: hidden;
   transition: filter 0.1s;
 }
@@ -392,12 +393,12 @@ h1 span {
   position: absolute;
   width: 480px;
   height: 510px;
-  border: 90px solid #e8dec480;
+  border: 90px solid #72896644;
   transform: rotate(-28deg);
   border-radius: 45% 45% 40% 40%;
   left: -262px;
   top: 132px;
-  box-shadow: 50px 40px 0 22px #70958190;
+  box-shadow: 50px 40px 0 22px #516e5140;
 }
 .ios-status {
   height: 52px;
@@ -443,12 +444,13 @@ h1 span {
 .home-widgets {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 17px;
+  grid-template-columns: 1fr;
+  gap: 0;
   margin: 22px 20px 29px;
 }
 .pet-widget {
-  height: 123px;
+  aspect-ratio: 755 / 354;
+  width: 100%;
   position: relative;
   border-radius: 19px;
   box-shadow: 0 5px 18px #20392b25;
@@ -468,35 +470,6 @@ h1 span {
   color: white;
   font-size: 9px;
   text-shadow: 0 1px 3px #0008;
-}
-.date-widget {
-  border-radius: 19px;
-  background: #eff4e49c;
-  padding: 14px 13px;
-  overflow: hidden;
-  position: relative;
-}
-.date-widget > span:first-child {
-  font-size: 8px;
-  line-height: 1.35;
-  display: block;
-  color: #51624b;
-}
-.date-widget strong {
-  font-family: Georgia, serif;
-  display: block;
-  font-size: 22px;
-  line-height: 1.03;
-  font-weight: 400;
-  margin-top: 10px;
-  letter-spacing: -0.5px;
-}
-.widget-spark {
-  position: absolute;
-  right: 8px;
-  bottom: 8px;
-  font-size: 24px;
-  color: #728e5a;
 }
 .home-apps {
   position: relative;
@@ -570,7 +543,7 @@ h1 span {
   display: flex;
   justify-content: space-between;
   border-radius: 24px;
-  background: #e5ecdf63;
+  background: #65756470;
   backdrop-filter: blur(12px);
 }
 .dock-icon {
@@ -582,30 +555,6 @@ h1 span {
   font-size: 31px;
   color: #fff;
   line-height: 1;
-}
-.dock-phone,
-.dock-message {
-  background: linear-gradient(#72df79, #29b843);
-}
-.dock-browser {
-  background: linear-gradient(#fafefc, #d9ecee);
-  color: #3b8eda;
-}
-.dock-message {
-  position: relative;
-  font-size: 39px;
-}
-.dock-message:after {
-  content: "";
-  position: absolute;
-  bottom: 9px;
-  left: 11px;
-  border-top: 8px solid white;
-  border-right: 8px solid transparent;
-}
-.dock-music {
-  background: linear-gradient(#fb6982, #f22d53);
-  font-size: 33px;
 }
 .phone-shadow {
   position: absolute;
@@ -632,7 +581,7 @@ h1 span {
   background: transparent;
   padding: 5px 0;
   font-size: 9px;
-  border-bottom: 1px solid #c5c7bd;
+  border-bottom: 1px solid var(--line);
   white-space: nowrap;
 }
 .stage-bottom {
@@ -685,7 +634,7 @@ h1 span {
   font-size: 16px;
   line-height: 1.75;
   max-width: 440px;
-  color: #55594f;
+  color: #cbc7be;
   margin-bottom: 15px;
 }
 .app-details {
@@ -703,7 +652,7 @@ h1 span {
 }
 .text-link {
   font-size: 12px;
-  border-bottom: 1px solid #b6b8ad;
+  border-bottom: 1px solid var(--line);
   padding: 7px 0;
 }
 .text-link:hover {
@@ -929,7 +878,7 @@ h1 span {
 }
 .about-copy {
   padding-top: 35px;
-  color: #606459;
+  color: #cbc7be;
   font-size: 15px;
   line-height: 1.8;
 }
@@ -941,7 +890,7 @@ h1 span {
   color: var(--ink);
 }
 .social-links a {
-  border-bottom: 1px solid #b6b8ad;
+  border-bottom: 1px solid var(--line);
   padding-bottom: 5px;
 }
 footer {
@@ -1027,14 +976,14 @@ footer {
 .collection-label span {
   margin-left: 14px;
 }
-.app-index {
+.contact-bar {
   display: flex;
   justify-content: space-between;
   gap: 25px;
   flex: 1;
   max-width: 760px;
 }
-.app-index a {
+.contact-bar a {
   font-size: 10px;
   color: var(--muted);
   display: flex;
@@ -1044,11 +993,11 @@ footer {
   position: relative;
   white-space: nowrap;
 }
-.app-index a > span {
+.contact-bar a > span {
   font-size: 8px;
   opacity: 0.7;
 }
-.app-index a:after {
+.contact-bar a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1060,18 +1009,12 @@ footer {
   transform-origin: left;
   transition: transform 0.3s;
 }
-.app-index a[aria-current],
-.app-index a:hover {
+.contact-bar a[aria-current],
+.contact-bar a:hover {
   color: var(--ink);
 }
-.app-index a[aria-current]:after {
+.contact-bar a[aria-current]:after {
   transform: scaleX(1);
-}
-.chapter-count {
-  font-size: 9px;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 @media (min-width: 1500px) and (min-height: 850px) {
   :root {
@@ -1080,9 +1023,6 @@ footer {
   }
   .home-widgets {
     margin: 29px 22px 39px;
-  }
-  .pet-widget {
-    height: 137px;
   }
   .home-apps {
     gap: 28px 12px;
@@ -1100,9 +1040,6 @@ footer {
   .dock-icon {
     width: 49px;
     height: 49px;
-  }
-  .date-widget strong {
-    font-size: 26px;
   }
   .vo2-screenshot {
     width: 210px;
@@ -1152,15 +1089,6 @@ footer {
   .home-widgets {
     margin: 11px 16px 23px;
     gap: 13px;
-  }
-  .pet-widget {
-    height: 106px;
-  }
-  .date-widget {
-    padding: 11px;
-  }
-  .date-widget strong {
-    font-size: 20px;
   }
   .home-apps {
     gap: 18px 10px;
@@ -1300,7 +1228,7 @@ footer {
   .collection-label {
     display: none;
   }
-  .app-index {
+  .contact-bar {
     max-width: none;
   }
   .stage-note {
@@ -1435,7 +1363,6 @@ footer {
     margin: 17px 13px 21px;
   }
   .pet-widget {
-    height: 89px;
     border-radius: 14px;
   }
   .pet-widget video {
@@ -1444,20 +1371,6 @@ footer {
   .pet-widget > span {
     font-size: 7px;
     top: calc(100% + 5px);
-  }
-  .date-widget {
-    border-radius: 14px;
-    padding: 9px;
-  }
-  .date-widget > span:first-child {
-    font-size: 6px;
-  }
-  .date-widget strong {
-    font-size: 17px;
-    margin-top: 8px;
-  }
-  .widget-spark {
-    font-size: 18px;
   }
   .home-apps {
     margin: 27px 10px 0;
@@ -1490,15 +1403,6 @@ footer {
     height: 32px;
     font-size: 24px;
     border-radius: 9px;
-  }
-  .dock-message {
-    font-size: 30px;
-  }
-  .dock-message:after {
-    bottom: 5px;
-    left: 9px;
-    border-top-width: 5px;
-    border-right-width: 5px;
   }
   .home-page-dots {
     bottom: 83px;
@@ -1602,18 +1506,15 @@ footer {
     height: 52px;
     gap: 12px;
   }
-  .app-index {
+  .contact-bar {
     gap: 12px;
   }
-  .app-index a {
+  .contact-bar a {
     font-size: 8px;
     gap: 4px;
   }
-  .app-index a > span {
+  .contact-bar a > span {
     font-size: 7px;
-  }
-  .chapter-count {
-    font-size: 8px;
   }
   .promo-vo2,
   .promo-planner,
@@ -1883,7 +1784,6 @@ footer {
     gap: 9px;
   }
   .pet-widget {
-    height: 74px;
     border-radius: 12px;
   }
   .pet-widget video {
@@ -1891,22 +1791,6 @@ footer {
   }
   .pet-widget > span {
     font-size: 6px;
-  }
-  .date-widget {
-    padding: 8px;
-    border-radius: 12px;
-  }
-  .date-widget strong {
-    font-size: 15px;
-    margin-top: 5px;
-  }
-  .date-widget > span:first-child {
-    font-size: 5px;
-  }
-  .widget-spark {
-    font-size: 15px;
-    right: 5px;
-    bottom: 5px;
   }
   .home-apps {
     margin: 21px 9px 0;
@@ -1936,9 +1820,6 @@ footer {
     height: 28px;
     font-size: 22px;
     border-radius: 8px;
-  }
-  .dock-message {
-    font-size: 26px;
   }
   .home-page-dots {
     bottom: 70px;
@@ -2021,24 +1902,21 @@ footer {
     height: 47px;
     gap: 8px;
   }
-  .app-index {
+  .contact-bar {
     overflow-x: auto;
     scrollbar-width: none;
     gap: 20px;
     padding-right: 6px;
   }
-  .app-index::-webkit-scrollbar {
+  .contact-bar::-webkit-scrollbar {
     display: none;
   }
-  .app-index a {
+  .contact-bar a {
     font-size: 8px;
     gap: 4px;
     flex-shrink: 0;
   }
-  .app-index a > span {
-    display: none;
-  }
-  .chapter-count {
+  .contact-bar a > span {
     display: none;
   }
   .promo-vo2,
@@ -2172,7 +2050,7 @@ footer {
 }
 .motion-paused .copy-panel,
 .motion-paused .phone-halo,
-.motion-paused .app-index a:after {
+.motion-paused .contact-bar a:after {
   transition: none;
 }
 
@@ -2368,5 +2246,102 @@ footer {
   }
   .js-enabled .stage-bottom {
     height: 42px;
+  }
+}
+
+/* Functional contact links in both bottom bars. */
+.contact-bar a {
+  font-size: 12px;
+}
+.contact-bar a:hover:after {
+  transform: scaleX(1);
+}
+.bar-back-top {
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.bar-back-top:hover {
+  color: var(--orange);
+}
+.dock-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+.dock-contact:hover .dock-icon {
+  transform: translateY(-2px);
+}
+.dock-icon {
+  transition: transform 0.2s;
+}
+.dock-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.dock-email {
+  background: linear-gradient(#649cf5, #316bd6);
+}
+.dock-x {
+  background: #161616;
+}
+.dock-github {
+  background: #343134;
+}
+.dock-linkedin {
+  background: #0a66c2;
+}
+.dock-label {
+  font-size: 7px;
+  line-height: 1;
+  text-shadow: 0 1px 3px #0005;
+}
+.ios-dock a:focus-visible {
+  outline-color: #fff;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+@media (max-width: 760px) {
+  .contact-bar a {
+    font-size: 10px;
+  }
+  .dock-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .dock-label {
+    font-size: 6px;
+  }
+  .bar-back-top {
+    font-size: 9px;
+  }
+}
+@media (max-width: 540px) {
+  .contact-bar {
+    justify-content: space-between;
+    gap: 14px;
+    padding-right: 0;
+  }
+  .contact-bar a {
+    font-size: 10px;
+  }
+  .contact-bar a > span {
+    display: inline;
+    font-size: 8px;
+  }
+  .bar-back-top {
+    display: none;
+  }
+  .dock-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .dock-label {
+    font-size: 5px;
+  }
+  .dock-contact {
+    gap: 4px;
   }
 }

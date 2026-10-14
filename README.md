@@ -22,7 +22,7 @@ The opening scene introduces Greg beside an interactive iPhone Home Screen. Scro
 
 The description and links on the left follow the current app. Each preview expands from its actual Home Screen icon and returns there before the next opens. Scrolling backward reverses the sequence. The final scene has enough scroll space to close before the biography comes into view.
 
-Click an app icon, the pet widget, or a name in the bottom index to jump to its fully open preview. The iPhone Home indicator returns to the introduction. App fragment links (for example `/#time-boxed`) work on entry and when navigating browser history. On phones, copy sits above the device; shorter screens use a smaller device and tighter composition.
+Click an app icon or the pet widget to jump to its fully open preview. The iPhone dock and the website’s bottom bar provide email (GregInPublic@icloud.com), X, GitHub, and LinkedIn links. The iPhone Home indicator returns to the introduction. App fragment links (for example `/#time-boxed`) work on entry and when navigating browser history. On phones, copy sits above the device; shorter screens use a smaller device and tighter composition.
 
 Inactive panels are removed from keyboard and assistive-technology navigation. Native page scrolling stays available. Reduced motion replaces the scale animation with a direct switch and pauses videos by default. The pause/play control manages motion, and hidden widget videos stop playing. The introduction, biography, social links, and an app link fallback remain usable without JavaScript.
 
@@ -36,7 +36,9 @@ Inactive panels are removed from keyboard and assistive-technology navigation. N
 - Time Boxed uses its existing SVG web-planner preview, explicitly labeled as a web preview.
 - Grave Maintenance uses the existing cemetery game screenshot.
 - The My Fur Baby widget and clock videos and their still posters come from the app's public website assets. Videos are local, muted, looped, and inline; no generated substitute pet is used.
-- The homepage contains no phone number, street address, or contact email.
+- The homepage uses the original charcoal dark palette with peach accents.
+- The Home Screen has one medium animated boxing rhino widget, copied with its poster from the supplied local MyFurBaby website assets. The decorative Make Your Day widget is removed.
+- The homepage lists the requested contact email and contains no phone number or street address.
 - Fonts come from Google Fonts, with local sans-serif and Georgia fallbacks.
 
 ## Verification

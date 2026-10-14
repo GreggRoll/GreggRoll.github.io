@@ -310,7 +310,7 @@ document.querySelector("#home-apps").innerHTML = apps
 document.querySelector("#phone-apps").innerHTML = apps
   .map(
     (app) =>
-      `<div class="app-window screenshot-gallery" data-app="${app.id}" role="region" aria-roledescription="carousel" aria-label="${app.name} ${app.screenshotKind}" aria-hidden="true">
+      `<div class="app-window screenshot-gallery" data-app="${app.id}" role="region" aria-roledescription="carousel" aria-label="${app.name} ${app.screenshotKind}" aria-hidden="true" hidden>
       <div class="gallery-slides">${app.screenshots.map((shot, i) => `<img class="gallery-shot${i === 0 ? " is-current" : ""}" ${i === 0 ? `src="assets/${shot.src}"` : ""} data-src="assets/${shot.src}" alt="${app.name}: ${shot.caption}" width="${shot.width}" height="${shot.height}" aria-hidden="${i !== 0}" decoding="async">`).join("")}</div>
       <nav class="gallery-controls" aria-label="${app.name} screenshots"><button type="button" data-gallery-direction="-1" aria-label="Previous ${app.name} screenshot">←</button><span class="gallery-count" aria-live="off" aria-label="Screenshot 1 of ${app.screenshots.length}">01 / ${String(app.screenshots.length).padStart(2, "0")}</span><button type="button" data-gallery-direction="1" aria-label="Next ${app.name} screenshot">→</button></nav>
       <span class="sr-only gallery-status" aria-live="polite" aria-atomic="true"></span>
@@ -445,7 +445,7 @@ function syncGalleryPlayback() {
     !paused &&
     !document.hidden &&
     !gallery.hovered &&
-    !gallery.element.contains(document.activeElement);
+    !gallery.element.querySelector(":focus-visible");
   const next = canPlay ? current : 0;
   if (next === galleryPlaying) return;
   clearTimeout(galleryTimer);
@@ -511,15 +511,22 @@ function syncMotion() {
   document.documentElement.classList.toggle("motion-paused", paused);
 }
 
-function measure() {
-  document.documentElement.style.setProperty(
-    "--stage-height",
-    `${document.querySelector(".stage").offsetHeight}px`,
+function measureComposition() {
+  const root = document.documentElement;
+  root.dataset.scene = current > 0 ? "app" : "home";
+  root.style.setProperty(
+    "--copy-height",
+    `${panels[Math.max(0, current)].offsetHeight}px`,
   );
-  stepPositions = steps.map((step) => ({
-    top: step.getBoundingClientRect().top + scrollY,
-    height: step.offsetHeight,
-  }));
+  const phone = document.querySelector(".phone");
+  const phoneStage = document.querySelector(".phone-stage");
+  root.style.setProperty(
+    "--phone-scale",
+    String(Math.min(1, phoneStage.clientHeight / phone.offsetHeight)),
+  );
+}
+
+function measureIcons() {
   const sr = screen.getBoundingClientRect();
   iconOrigins = apps.map((app) => {
     const ir = document
@@ -532,6 +539,24 @@ function measure() {
       scale: ir.width / sr.width,
     };
   });
+}
+
+function measure() {
+  measureComposition();
+  document.documentElement.style.setProperty(
+    "--stage-height",
+    `${document.querySelector(".stage").offsetHeight}px`,
+  );
+  const scrollPadding = parseFloat(
+    getComputedStyle(document.documentElement).scrollPaddingTop,
+  ) || 0;
+  stepPositions = steps.map((step) => {
+    const height = step.offsetHeight;
+    // Native fragment navigation must land in the same open scene as a click.
+    step.style.scrollMarginTop = `${-(height * 0.34 + scrollPadding)}px`;
+    return { top: step.getBoundingClientRect().top + scrollY, height };
+  });
+  measureIcons();
   render();
 }
 
@@ -578,9 +603,13 @@ function render() {
     );
     document.querySelector("#phone-caption").textContent =
       app?.caption || "Five apps. One curious mind.";
+    measureComposition();
+    measureIcons();
   }
   windows.forEach((window, i) => {
     const visible = i === next - 1 && amount > 0.001;
+    // Remove inactive previews from painting, including Safari's scroll layers.
+    window.hidden = !visible;
     window.classList.toggle("is-visible", visible);
     window.setAttribute("aria-hidden", String(!visible));
     window.inert = !visible;

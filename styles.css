@@ -685,6 +685,9 @@ h1 span {
 .app-window.is-visible {
   visibility: visible;
 }
+.app-window[hidden] {
+  display: none;
+}
 .app-window > img.full-promo {
   width: 100%;
   height: 100%;
@@ -2474,5 +2477,49 @@ footer {
   }
   .gallery-count {
     font-size: 7px;
+  }
+}
+
+/* Fit the mobile composition into Safari's smallest visible viewport. */
+.js-enabled .scroll-track {
+  margin-top: calc(-1 * var(--stage-height, 100svh));
+}
+@media (max-width: 540px) {
+  .js-enabled .stage {
+    min-height: 0;
+    padding-top: calc(var(--header-height) + 12px);
+    padding-bottom: calc(61px + env(safe-area-inset-bottom, 0px));
+  }
+  .js-enabled[data-scene="app"] .stage {
+    padding-top: 16px;
+  }
+  .stage-shell {
+    gap: 12px;
+  }
+  .js-enabled .copy-stack {
+    height: var(--copy-height, 201px);
+  }
+  .js-enabled .phone-column {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+  .phone-stage {
+    height: auto;
+    min-height: 0;
+  }
+  .phone {
+    transform: scale(var(--phone-scale, 1));
+  }
+  .phone-halo {
+    transform: translate(-50%, -50%) scale(var(--phone-scale, 1));
+  }
+  .phone-caption {
+    margin-top: 6px;
+  }
+  .js-enabled .stage-bottom {
+    height: calc(47px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 }

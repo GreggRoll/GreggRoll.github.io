@@ -22,7 +22,7 @@ The opening scene introduces Greg beside an interactive iPhone Home Screen. Scro
 
 The description and links on the left follow the current app. While an app is fully open, its screenshots cycle every 4.5 seconds. Previous/next buttons and keyboard arrows provide manual browsing, with wraparound. Cycling pauses during mouse hover or keyboard focus, while the tab is hidden, and when the app is closing. The shared pause/play control also pauses the slideshow; reduced motion disables automatic cycling by default. Each preview expands from its actual Home Screen icon and returns there before the next opens. Scrolling backward reverses the sequence. The final scene has enough scroll space to close before the biography comes into view.
 
-Click an app icon or the pet widget to jump to its fully open preview. The iPhone dock and the website’s bottom bar provide email (GregInPublic@icloud.com), X, GitHub, and LinkedIn links. The iPhone Home indicator returns to the introduction. App fragment links (for example `/#time-boxed`) work on entry and when navigating browser history. On phones, copy sits above the device; shorter screens use a smaller device and tighter composition.
+Click an app icon or the pet widget to jump to its fully open preview. The iPhone dock and the website’s bottom bar provide email (GregInPublic@icloud.com), X, GitHub, and LinkedIn links. The iPhone Home indicator returns to the introduction. App fragment links (for example `/#time-boxed`) work on entry and when navigating browser history. On phones, app copy moves to the top of the viewport, and the device scales to the space remaining below the actual copy height. The composition fits the smallest visible browser viewport and reserves space for the contact bar and bottom safe area. Inactive previews are removed from painting when sections change. Touching gallery controls does not leave automatic cycling paused; keyboard focus still pauses it.
 
 Inactive panels are removed from keyboard and assistive-technology navigation. Native page scrolling stays available. Reduced motion replaces the scale animation with a direct switch and pauses videos by default. The pause/play control manages motion, and hidden widget videos stop playing. The introduction, biography, social links, and an app link fallback remain usable without JavaScript.
 
@@ -45,6 +45,8 @@ Inactive panels are removed from keyboard and assistive-technology navigation. N
 ## Verification
 
 The redesign was checked in Chromium at desktop, tablet, and mobile sizes, including 1440×900, 1024×768, 768×1024, 390×844, 375×667, and 320×568. Browser checks cover all five open/hold/close sequences, backward scrolling, app-icon and Home navigation, direct fragments, reduced motion, video pause/play, horizontal overflow, and the no-JavaScript fallback. Gallery checks additionally verify all 28 images, cycling for every app, wraparound, pause/play, keyboard navigation, reduced motion, and controls at mobile and short desktop sizes. Local assets load successfully without page errors.
+
+The mobile layout fix was checked in Chromium and WebKit at 320×568, 375×667, 390×844, 393×752, 430×781, 430×932, and 540×780. Checks cover forward/backward section changes, hidden preview removal, device and caption clearance above the contact bar, touch autoplay, and keyboard focus pausing. Native fragment navigation also lands on the fully open app when revisiting the same fragment.
 
 For source checks:
 

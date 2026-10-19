@@ -1,0 +1,5 @@
+# Public projects remain crawlable.
+User-agent: *
+Allow: /
+
+Sitemap: https://greggroll.github.io/VO2Cue/sitemap.xml

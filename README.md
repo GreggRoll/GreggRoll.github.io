@@ -30,8 +30,8 @@ Inactive panels are removed from keyboard and assistive-technology navigation. N
 
 - Bio and app descriptions retain the original portfolio content.
 - Each app links to its existing website/demo and GitHub repository.
-- VO2Cue, MyJourney, and Time Boxed have their existing App Store links.
-- My Fur Baby is labeled coming soon to the App Store; Grave Maintenance is identified as a browser prototype. No store URLs are invented.
+- VO2Cue, MyJourney, Time Boxed, and My Fur Baby have their verified App Store links.
+- My Fur Baby links to its released App Store listing at https://apps.apple.com/us/app/my-fur-baby/id6820522244; Grave Maintenance is identified as a browser prototype.
 - Four galleries use the complete iPhone App Store screenshot sets from the Desktop app projects: VO2Cue (6), MyJourney (3), Time Boxed (7), and My Fur Baby (8).
 - Grave Maintenance has no App Store set; its gallery cycles 4 browser-game captures from the Desktop project.
 - Screenshot artwork is displayed proportionally without cropping. WebP derivatives keep the full artwork while reducing download size; the original Desktop exports are unchanged. See `assets/screenshots/README.md` for source folders.

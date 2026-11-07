@@ -178,7 +178,7 @@ const apps = [
     page: "https://greggroll.github.io/MyFurBaby/",
     cta: "Meet My Fur Baby",
     source: "https://github.com/GreggRoll/MyFurBaby",
-    availability: "App Store · Coming soon",
+    store: "https://apps.apple.com/us/app/my-fur-baby/id6820522244",
     note: "Widgets, animations, and photo adventures are Pro features. AI creations use credits.",
     caption: "My Fur Baby · Real widgets. Really cute company.",
     screenshotKind: "App Store screenshots",

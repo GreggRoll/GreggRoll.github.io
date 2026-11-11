@@ -3,3 +3,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://greggroll.github.io/VO2Cue/sitemap.xml
+
+Sitemap: https://greggroll.github.io/sitemap.xml
